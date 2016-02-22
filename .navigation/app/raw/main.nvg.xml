@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.MOM.MOMListActivity"/>
+      <point      
+        x = "2772"      
+        y = "28"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.AttendanceActivity"/>
+      <point      
+        x = "3764"      
+        y = "408"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.ActivityFullScreenImageView"/>
+      <point      
+        x = "1872"      
+        y = "-28"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.UserProfile"/>
+      <point      
+        x = "3852"      
+        y = "80"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.PalnogramActivity1"/>
+      <point      
+        x = "3840"      
+        y = "104"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.EOLNotificationShow"/>
+      <point      
+        x = "3876"      
+        y = "92"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.StockEscalation"/>
+      <point      
+        x = "4164"      
+        y = "-20"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.EMS.SearchExpenseListingActivity"/>
+      <point      
+        x = "3880"      
+        y = "156"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.StoreWorking"/>
+      <point      
+        x = "3852"      
+        y = "384"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.TodaySchemesActivity"/>
+      <point      
+        x = "3744"      
+        y = "60"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.OutletWorking1"/>
+      <point      
+        x = "840"      
+        y = "1136"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.BeatApproval"/>
+      <point      
+        x = "1050"      
+        y = "650"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.LMS.LeaveCalenderActivity"/>
+      <point      
+        x = "1150"      
+        y = "750"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.BeatCreation"/>
+      <point      
+        x = "1100"      
+        y = "700"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.LMS.LMSLeaveDetailActivity"/>
+      <point      
+        x = "1200"      
+        y = "800"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.Announcement"/>
+      <point      
+        x = "1250"      
+        y = "850"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.ActivityDashboardChildNonStoreWise"/>
+      <point      
+        x = "1300"      
+        y = "900"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.DealerSelectionActivity"/>
+      <point      
+        x = "1350"      
+        y = "950"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.SODetailActivity"/>
+      <point      
+        x = "1450"      
+        y = "1050"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.PalnogramActivity"/>
+      <point      
+        x = "1400"      
+        y = "1000"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.SellOutProjection"/>
+      <point      
+        x = "1500"      
+        y = "1100"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.MOM.MOMSearchActivity"/>
+      <point      
+        x = "1550"      
+        y = "1150"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.LMS.LMSLeaveActionActivity"/>
+      <point      
+        x = "1600"      
+        y = "1200"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.SplashActivity"/>
+      <point      
+        x = "1650"      
+        y = "1250"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.EOLOrderActivity"/>
+      <point      
+        x = "1700"      
+        y = "1300"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.QuestionnaireActivity"/>
+      <point      
+        x = "1748"      
+        y = "1348"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.LMS.LMSCreateLeaveActivity"/>
+      <point      
+        x = "1800"      
+        y = "1400"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.util.updateApp.UpdateApp"/>
+      <point      
+        x = "1850"      
+        y = "1450"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.FeedbackDetailActivity"/>
+      <point      
+        x = "1900"      
+        y = "1500"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.Geotag"/>
+      <point      
+        x = "1950"      
+        y = "1550"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.FullScreenImageActivity"/>
+      <point      
+        x = "2000"      
+        y = "1600"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.FMSCreateFeedbackActivity"/>
+      <point      
+        x = "2050"      
+        y = "1650"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.RaceProductAuditCartActivity1"/>
+      <point      
+        x = "2100"      
+        y = "1700"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.MOM.MOMCreateActiviity"/>
+      <point      
+        x = "2150"      
+        y = "1750"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.LMS.LMSListActivity"/>
+      <point      
+        x = "2200"      
+        y = "1800"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.KPIListActivity1"/>
+      <point      
+        x = "2250"      
+        y = "1850"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.BookOrder"/>
+      <point      
+        x = "2300"      
+        y = "1900"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.TakeActionFeedbackDetailActivity"/>
+      <point      
+        x = "2350"      
+        y = "1950"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.LoginActivity"/>
+      <point      
+        x = "2400"      
+        y = "2000"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.EMS.ExpenseListingActivity"/>
+      <point      
+        x = "2450"      
+        y = "2050"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.MainMenuActivityListGrid"/>
+      <point      
+        x = "2500"      
+        y = "2100"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.SchemeDetails"/>
+      <point      
+        x = "2550"      
+        y = "2150"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.OutletProfile"/>
+      <point      
+        x = "2600"      
+        y = "2200"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.FMSFeedbackTracker1"/>
+      <point      
+        x = "2650"      
+        y = "2250"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.ServiceIdList"/>
+      <point      
+        x = "2700"      
+        y = "2300"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.NotificationsListFragment2"/>
+      <point      
+        x = "2750"      
+        y = "2350"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.MOM.MOMDetailsActivity"/>
+      <point      
+        x = "2800"      
+        y = "2400"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.RaceProductDetailActivity"/>
+      <point      
+        x = "2850"      
+        y = "2450"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.LMSActivity"/>
+      <point      
+        x = "2900"      
+        y = "2500"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.Collections"/>
+      <point      
+        x = "2950"      
+        y = "2550"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.EMS.NewBillActivity"/>
+      <point      
+        x = "3000"      
+        y = "2600"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.MyTerritoriesActivity"/>
+      <point      
+        x = "3050"      
+        y = "2650"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.RaceProductAuditCartItemUpdateActivity"/>
+      <point      
+        x = "3250"      
+        y = "2850"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.BeatManagement"/>
+      <point      
+        x = "1208"      
+        y = "2776"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.OutletProfile2"/>
+      <point      
+        x = "3150"      
+        y = "2750"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.reports.DashboardReports"/>
+      <point      
+        x = "3100"      
+        y = "2700"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.BeatsDetail"/>
+      <point      
+        x = "3300"      
+        y = "2900"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.CalendarView"/>
+      <point      
+        x = "3350"      
+        y = "2950"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.AddCollectionDialog"/>
+      <point      
+        x = "3450"      
+        y = "3050"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.CounterShareDisplayShareActivity"/>
+      <point      
+        x = "3400"      
+        y = "3000"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.SchemeAvailable"/>
+      <point      
+        x = "3500"      
+        y = "3100"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.DealerHistory"/>
+      <point      
+        x = "3550"      
+        y = "3150"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.ActivityDashboardChild"/>
+      <point      
+        x = "3650"      
+        y = "3250"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.DealerCreation"/>
+      <point      
+        x = "3600"      
+        y = "3200"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.EMS.NewExpenseActivity"/>
+      <point      
+        x = "3750"      
+        y = "3350"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.samsung.ssc.activitymodule.RaceProductAuditActivity"/>
+      <point      
+        x = "3700"      
+        y = "3300"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

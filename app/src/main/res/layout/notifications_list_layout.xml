@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dip"
+        layout="@layout/header" />
+
+    <include
+        android:id="@+id/listHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        layout="@layout/notifications_list_header" />
+
+    <ListView
+        android:id="@+id/notificationsListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_above="@+id/loadMoreButton"
+        android:layout_below="@+id/listHeader" />
+
+    <Button
+        android:id="@+id/loadMoreButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/buttonblue"
+        android:padding="10dp"
+        android:text="@string/load_more"
+       android:textColor="@drawable/button_text_color_selector" />
+
+</RelativeLayout>

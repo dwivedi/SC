@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/icon_bg_ontap" android:state_selected="true"></item>
+    <item android:drawable="@drawable/icon_bg_ontap" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/grid_icon_background_red"></item> 
+
+</selector><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/drawable/grid_item_selector_red_border.xml -->

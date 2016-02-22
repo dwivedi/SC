@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/splash_logo_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/splash_logo_ssc" />
+
+                <ImageView
+                    android:id="@+id/lock_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/splash_logo_imageview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/margin_13"
+                    android:src="@drawable/lock_ssc" />
+
+                <RelativeLayout
+                    android:id="@+id/login_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lock_imageview"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="@dimen/margin_13"
+
+                    android:background="@drawable/edit_text_background"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etLoginPin"
+                        style="@style/edit_field_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:gravity="left"
+                        android:hint="@string/pin"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:padding="8dp"
+                        android:textSize="@dimen/small_text_size"
+                        android:text="123456"
+                        android:textStyle="bold"></EditText>
+
+                    <ImageView
+                        android:id="@+id/ivShowPassword"
+                        style="@style/edit_field_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onShowHidePasswordClick"
+                        android:paddingRight="8dp"
+                        android:src="@drawable/ic_close_eye" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:layout_below="@id/login_layout">
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tvLoginForgetPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+
+                        android:clickable="true"
+                        android:onClick="onForgetLinkClick"
+                        android:text="@string/forgetpin"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/small_text_size"
+                        smartdost:fontType="roboto_medium" />
+
+                    <com.samsung.ssc.CustomUI.SSCButton
+                        android:id="@+id/btnLoginSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+
+                        android:background="@drawable/buttonblue_ssc"
+                        android:clickable="true"
+                        android:paddingLeft="@dimen/margin_30"
+                        android:paddingRight="@dimen/margin_30"
+                        android:text="@string/login"
+                        android:textColor="@drawable/button_text_color_selector"
+                        android:textSize="@dimen/small_text_size"
+                        smartdost:buttonFontType="roboto_medium"
+                           />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvLoginVersion"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/need_support"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/small_text_size"
+                    smartdost:fontType="roboto_medium" />
+
+                <TextView
+                    android:layout_width="270dp"
+                    android:layout_height="1dp"
+                    android:background="#858585" />
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:id="@+id/tvCallUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:autoLink="phone"
+                    android:gravity="center_horizontal"
+                    android:text="@string/call_us"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/small_text_size"
+                    smartdost:fontType="roboto_medium" />
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/time"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/small_text_size"
+                    smartdost:fontType="roboto_medium" />
+            </LinearLayout>
+
+            <com.samsung.ssc.CustomUI.SSCTextView
+                android:id="@id/tvLoginVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:text="Version"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small_text_size"
+                android:visibility="gone"
+                smartdost:fontType="roboto_medium" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="onExportDBClick"
+                android:text="Export DB"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

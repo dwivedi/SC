@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/header"/> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/header" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="60dp" -->
+    <!-- android:layout_alignParentTop="true" -->
+    <!-- android:layout_marginBottom="10dp" -->
+    <!-- android:background="@drawable/headerblue" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/headercentretext" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:textColor="@android:color/white" -->
+    <!-- android:textSize="@dimen/headersize" -->
+    <!-- android:textStyle="bold" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/quickmenu" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:onClick="onClick" -->
+    <!-- android:src="@drawable/ic_launcher" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/exit" -->
+    <!-- android:layout_width="35dp" -->
+    <!-- android:layout_height="35dp" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_margin="10dp" -->
+    <!-- android:onClick="onClick" -->
+    <!-- android:src="@drawable/exit" /> -->
+    <!-- </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        
+        android:background="@drawable/action_bar_background" >
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/headercentretext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="HOME"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_small_seventeen"
+            smartdost:fontType="roboto_medium" />
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+             android:scaleType="fitCenter"
+            android:src="@drawable/ic_cross" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:listSelector="#00000000"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+</RelativeLayout>

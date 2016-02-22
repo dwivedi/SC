@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <TextView
+        style="@style/text_notification_list_header_style"
+        android:layout_weight=".5"
+        android:text="Name" />
+
+    <TextView
+        style="@style/text_notification_list_header_style"
+        android:layout_weight=".3"
+        android:text="UNREAD" />
+
+    <TextView
+        style="@style/text_notification_list_header_style"
+        android:layout_weight=".2"
+        android:text="Total" />
+
+</LinearLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/kpi_list_header.xml -->

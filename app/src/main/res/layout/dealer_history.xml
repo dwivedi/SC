@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/header_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        smartdost:actionTitle="Dealer History" />
+
+    <LinearLayout
+        android:id="@+id/header_dealer_history"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_text_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#a9a9a9"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="visible"
+        android:weightSum="5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Firm Name"
+            android:textColor="#000000"
+            android:padding="2dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="City/Town"
+            android:textColor="#000000"
+            android:padding="2dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Owner Name"
+            android:textColor="#000000"
+            android:padding="2dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Owner Mobile"
+            android:textColor="#000000"
+            android:padding="2dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Approval Status"
+            android:textColor="#000000"
+            android:padding="2dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_history"
+        style="@style/list_style"
+        android:layout_below="@+id/header_dealer_history"
+        android:layout_marginTop="0dp"
+        android:layout_above="@+id/btnok"
+        android:paddingTop="0dp" />
+
+    <com.samsung.ssc.CustomUI.SSCButton
+        android:id="@+id/btnok"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/buttonblue"
+        android:gravity="center"
+        android:onClick="onOKButtonClicked"
+        android:text="@string/ok"
+        android:textColor="@drawable/button_text_color_selector"
+        android:textSize="@dimen/text_size_smaller"
+        smartdost:buttonFontType="roboto_medium" />
+
+</RelativeLayout>

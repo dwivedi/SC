@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/sDActionBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      
+        smartdost:actionTitle="@string/create_feedabck" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_submit_fms_create_feedback"
+        android:layout_below="@+id/sDActionBar1"
+        android:fillViewport="true"
+        android:padding="@dimen/list_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="3" >
+
+                <Spinner
+                    android:id="@+id/spinnerTeamFMSCreateFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:prompt="@string/prompt_team" />
+
+                <Spinner
+                    android:id="@+id/spinnerFeedbackCategoryFMSCreateFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:layout_weight="1"
+                    android:prompt="@string/prompt_feedback_category" />
+
+                <Spinner
+                    android:id="@+id/spinnerFeedbackTypeFMSCreateFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:layout_weight="1"
+                    android:prompt="@string/prompt_feedback_type" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <ImageView
+                    android:id="@+id/iv_sample_image"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/ivSnapShotFMSCreateFeedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/snapshot_bg"
+                        android:onClick="onIvSnapshotClick"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tv_add_SnapShotFMSCreateFeedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:layout_toLeftOf="@+id/btnSnapShotFMSCreateFeedback"
+                        android:text="Add"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/btnSnapShotFMSCreateFeedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_snapshot"
+                        android:onClick="onSpanShotClick" />
+
+                    <Button
+                        android:id="@+id/btnEditSnapShotFMSCreateFeedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/list_padding"
+                        android:background="@drawable/bt_edit_image"
+                        android:onClick="onEditSpanShotClick"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/tv_snapshot_SnapShotFMSCreateFeedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_toRightOf="@+id/btnSnapShotFMSCreateFeedback"
+                        android:text="Snapshot"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_remark_fms_create_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/fms_edit_text_height"
+                android:layout_marginTop="@dimen/list_padding"
+                android:gravity="top"
+                 android:hint="Remarks"
+                android:maxLines="5"
+          
+                
+                 />
+
+            <Button
+                android:id="@+id/bt_add_fms_create_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/add_btn_height"
+                android:layout_marginBottom="@dimen/list_padding"
+                android:layout_marginTop="@dimen/list_padding"
+                android:background="@drawable/buttonblue_rectangle"
+                android:gravity="center"
+                android:onClick="onAddClick"
+                android:text="@string/add_btn"
+                android:textColor="@color/button_text_color_selector_from_color_floder"
+                
+                 />
+
+            <!-- Table header start -->
+
+            <LinearLayout
+                android:id="@+id/table_header_fms_create_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fms_table_header"
+                android:orientation="horizontal"
+                android:weightSum="13" >
+
+                <TextView
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fms_table_item_border_bg" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/small_margin"
+                    android:text="Team"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fms_table_item_border_bg" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/small_margin"
+                    android:text="Feedback Category"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fms_table_item_border_bg" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/small_margin"
+                    android:text="Feedback Type"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fms_table_item_border_bg" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/delete"
+                        android:onClick="onDeleteAllClick" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Table header end -->
+
+            <LinearLayout
+                android:id="@+id/ll_table_container_fms_create_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_submit_fms_create_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/reportee_list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/list_padding"
+        android:background="@drawable/buttonblue_rectangle"
+        android:gravity="center"
+        android:onClick="onSubmitClick"
+        android:text="@string/submit"
+        android:textColor="@color/button_text_color_selector_from_color_floder"
+        android:textStyle="bold" >
+    </Button>
+
+</RelativeLayout>

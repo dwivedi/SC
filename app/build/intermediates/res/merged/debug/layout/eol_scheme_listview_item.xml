@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_schem_detail_item_eolNotifcation"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+  
+    android:weightSum="3" >
+
+    <TextView
+        android:id="@+id/tv_product_name_eolSchemeDetailListviewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/eol_product_name"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:paddingLeft="10dp"
+         />
+
+    <TextView
+        android:id="@+id/tv_max_support_eolSchemeDetailListviewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/eol_max_support"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_support_per_unit_eolSchemeDetailListviewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/eol_support_per_unit"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" >
+    </TextView>
+
+</LinearLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/eol_scheme_listview_item.xml -->

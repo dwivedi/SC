@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+
+     <string name="url">http://107.110.101.188/SalesCatalystService_Test/SmartDost.svc/</string>
+    <string name="url_file_processor_consolebase">http://107.110.101.188/SalesCatalystService_Test/FileProcessor.ashx?</string>
+    <string name="url_file_processor_servicebase">http://107.110.101.188/SalesCatalystService_Test/FileProcessor.ashx?</string>
+    <string name="webview_image_from_replace"><Data><![CDATA[src=\"/SmartDost_Ce/]]></Data></string>
+    <string name="webview_image_to_url"><Data><![CDATA[src=\"http://107.110.101.188/SmartDost_Ce/]]></Data></string>
+    <string name="expense_image_base_url">http://107.110.101.188/SalesCatalystService_Test/Contents/ExpenseFiles/</string>
+   -->
+
+    <!-- Dev server -->
+   <!--<string name="url">http://107.110.101.188/SaleCatalystService_Dev/SmartDost.svc/</string>-->
+   <!--<string name="url">http://107.110.97.26/SalesCatalyst_Service_Dev/SalesCatalyst.svc/</string>-->
+   <string name="url">http://107.109.144.13/SalesCatalyst-Service/SalesCatalyst.svc/</string>
+    <string name="url_file_processor_consolebase">http://107.110.101.188/SaleCatalystService_Dev/FileProcessor.ashx?</string>
+    <string name="url_file_processor_servicebase">http://107.110.101.188/SaleCatalystService_Dev/FileProcessor.ashx?</string>
+    <string name="webview_image_from_replace"><Data><![CDATA[ <img src=\"/SmartDost_Ce_Dev/]]></Data></string>
+    <string name="webview_image_to_url"><Data><![CDATA[ <img src=\"http://107.110.101.188/SmartDost_Ce_Dev/]]></Data></string>
+    <string name="expense_image_base_url">http://107.110.101.188/SaleCatalystService_Dev/Contents/ExpenseFiles/</string>
+
+
+ <string name="app_name">Sales Catalyst</string>
+    <string name="action_settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="submit">Submit</string>
+    <string name="summary">Summary</string>
+    <string name="save">Save</string>
+    <string name="proceed">Proceed</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="intializing">Initializing...</string>
+
+    <!-- User Profile -->
+    <string name="title_user_profile">User Profile</string>
+    <string name="emp_name">First name</string>
+    <string name="emp_last_name">Last name</string>
+    <string name="emp_Email">E-Mail</string>
+    <string name="emp_alternate_email">Alter. E-mail</string>
+    <string name="emp_mobile_calling">Mobile1</string>
+    <string name="emp_mobile_sd">Mobile2</string>
+    <string name="emp_address">Address</string>
+    <string name="pincode">Pincode</string>
+    <string name="emp_photo">Upload your photo</string>
+    <string name="enter_name_msg">First name can\'t be blank.</string>
+    <string name="enter_last_name_msg">Last name can\'t be blank.</string>
+    <string name="enter_email_msg">E-mail can\'t be blank.</string>
+    <string name="enter_mobile_msg">Mobile no. should be 10 digit.</string>
+    <string name="enter_address_msg">Address can\'t be blank.</string>
+    <string name="enter_pincode_msg">Pincode should be min. 6 digit</string>
+    <string name="invalidemail">Enter valid email</string>
+    <string name="enter_store_manager_name">Enter Store Manager Name</string>
+    <string name="kas">KAS</string>
+
+    <!-- End -->
+
+    <string name="pin">Pin</string>
+    <string name="invalidpin_lowecase">Pin number is not valid. It should contain a lower case character. </string>
+    <string name="invalidpin_length">Pin number is not valid. Pin length should be minimum of 10 characters. </string>
+    <string name="invalidpin_digit">Pin number is not valid.It should contain a digit. </string>
+    <string name="invalidpin_special_character">Pin number is not valid. It should contain a special character. </string>
+    <string name="invalidpin_uppercase">Pin number is not valid. It should contain a uppercase character. </string>
+    <string name="invalid_identical">consecutive identical input is not valid. It should not contain 3 consecutive identical input. </string>
+    <string name="invalidpin_space">Pin number is not valid. It should not contain space. </string>
+    <string name="reset_pin">Reset Pin</string>
+    <string name="forgetpin">Forgot your pin?</string>
+    <string name="registerPin">Register Pin</string>
+    <string name="login">Login</string>
+    <string name="loadingmessage">loading Please Wait &#8230;</string>
+    <string name="networkserverbusy">Server Busy &#8230;</string>
+    <string name="info">For technical support, Please call helpdesk on 18001083366 between 9:30am to 6:30pm.</string>
+    <string name="mainmenu">Home</string>
+    <string name="attendance">Attendance</string>
+    <string name="selectleave">Select Nos Leaves</string>
+    <string name="marketworking">Market Working</string>
+    <string name="activitymodule">Activity</string>
+    <string name="newdealerstore">New Dealer Store</string>
+    <string name="outletworking">Store Working</string>
+    <string name="mytodays">My TODAYS</string>
+    <string name="mymtd">My MTD</string>
+    <string name="myytd">My YTD</string>
+    <string name="mtd">MTD</string>
+    <string name="lmtd">LMTD</string>
+    <string name="geotag">Dealer Board</string>
+    <string name="bookorder">Book Order</string>
+    <string name="competition">Retail Index</string>
+    <string name="csaudit">CS Audit</string>
+    <string name="officetraining">Office/Training</string>
+    <string name="posmtracking">POSM Tracking</string>
+    <string name="retailaudit">Retail Audit</string>
+    <string name="visitordetails">Visitor Details</string>
+    <string name="collection">Collection</string>
+    <string name="channelhygiene">Channel Hygiene</string>
+    <string name="gotobeat">Goto Beat</string>
+    <string name="displaybeats">Display Beats</string>
+    <string name="selectdealer">Select Dealer</string>
+    <string name="storestatus">Store Status</string>
+    <string name="logout">Logout</string>
+    <string name="enterpin">Ener your pin</string>
+    <string name="enterpassword">Ener password</string>
+    <string name="error1">Network Error</string>
+    <string name="error2">Internet Not Available</string>
+    <string name="error3">Alert!</string>
+    <string name="error4">Enable Gps And Network Location</string>
+    <string name="error5">Location Not Available Try again!</string>
+    <string name="error6">Image Not Clicked</string>
+    <string name="error7">Error</string>
+    <string name="error8">Fill some data</string>
+    <string name="error9">Select Attendance</string>
+    <string name="error10">Message</string>
+    <string name="error11">Unsaved data will be lost if you switch screen.</string>
+    <string name="error12">Are you sure you want to quit?</string>
+    <string name="error13">Select some dates from calender</string>
+    <string name="error15">Unable to create Geo Tag of store, Make sure SD card inserted properly</string>
+    <string name="datasave">Data saved Successfully.</string>
+    <string name="datasubmit">Last Store data submitted successfully.</string>
+    <string name="datanotsubmit">Last Store data Upload failed Retry again!</string>
+    <string name="datasubmit_sync">Store data submitted successfully.</string>
+    <string name="datanotsubmit_sync">Store data Upload failed Retry again!</string>
+    <string name="Nodata">No Data Available to Upload.</string>
+    <string name="confirmdatasave">You want to Save data.</string>
+    <string name="confirmdatasubmit">Sure want to submit data.</string>
+    <string name="server_not_responding">Server not responding, please try again later.</string>
+    <string name="sucess">Success!</string>
+    <string name="PREFERENCE_NAME">"pref_samsung"</string>
+    <string name="username">UserName</string>
+    <string name="attendanceoption1">MEETING or MARKET</string>
+    <string name="attendanceoption2">LEAVE or OFF</string>
+    <string name="noofleaves">Nos. Of Leaves</string>
+    <string name="update">Update</string>
+    <string name="sample_image_tag">Sample Image Tag</string>
+    <string name="reports">Reports</string>
+    <string name="dealerboard">Dealer Board</string>
+    <string name="questionoftheday">Question Of The Day</string>
+    <string name="partnerquestions">Partner Question</string>
+    <string name="comingsoon">Coming soon &#8230;</string>
+    <string name="sync_data">You did not sync data to server. Sync the data before continue other beat.</string>
+    <string name="save_msg">Unsaved data will not be considered for server syncing. Are you sure want to continue?</string>
+    <string name="cancel_msg">Please click on Proceed button to make effect on data. Sure want to continue?</string>
+    <string name="refresh_msg">This action will reload all the masters, and Logout. </string>
+    <string name="retail_msg">You have not answered all questions of Mandatory SPP Retail Index. Answer all question else store would not be considered as Covered.</string>
+    <string name="apk_update_msg">SmarDost updated version is available. Press Ok to continue..</string>
+
+    <!-- forget password -->
+    <string name="confirmationid">Employee Id</string>
+    <string name="newpassword">New Pin</string>
+    <string name="reenterpassword">Re-Enter Pin</string>
+    <string name="insertsim">please Enter sim then try again !</string>
+    <string name="pinnotmatch">Pin number not match</string>
+    <string name="fields_can_not_blank">Fields can not be blank</string>
+    <!-- End -->
+    <!-- office training -->
+    <string name="comments">Enter Your Comment</string>
+    <string name="updatingcomments">Uploading data Please Wait &#8230;</string>
+
+    <!-- End -->
+
+
+    <!-- Partner Meeting -->
+    <string name="city">City</string>
+    <string name="partnerdetails">Partner Details</string>
+    <!-- End -->
+
+
+    <!-- Geo tag Screen -->
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="upload_photo">Upload Image</string>
+    <string name="fetchinglocation">Getting Location &#8230;</string>
+    <string name="unable_to_create_geo_tag">Unable to create Geo Tag of store, make sure SD card inserted properly.</string>
+    <string name="need_to_capture_pic">Need to capture pics of store.</string>
+    <!-- End -->
+
+
+    <!-- Beat Managment -->
+    <string name="title_calender">Select Market/Weekly Off</string>
+    <string name="leave">Leave</string>
+    <string name="weekly_off">Market/Weekly Off</string>
+    <string name="select_planed_beats">Coverage date</string>
+    <string name="dealer_type">Select Dealer</string>
+    <string name="dealer_type_spinner">Dealers Type </string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <!-- End -->
+
+
+    <!-- Partner Meeting -->
+    <string name="title_partner_selection">Partner Selection</string>
+    <string name="contactPerson">Contact Person</string>
+    <string name="contactMobile">Contact Mobile</string>
+    <string name="contactEmail">Contact Email</string>
+    <string name="lastVisitedInfo">Last Visited Info</string>
+
+    <!--
+    <string name="acpurchasevalue">AC Purchase value</string>
+    <string name="acsalevalue">AC Sell value</string>
+    <string name="avpurchasevalue">AV Purchase value</string>
+    <string name="avsalevalue">AV Sell value</string>
+    <string name="hapurchasevalue">HA Purchase value</string>
+    <string name="hasalevalue">HA Sell value</string>
+
+
+
+
+
+
+
+    -->
+
+    <string name="targetAchivement">Target Achivevement</string>
+    <string name="lastVisitedSummary">Last Visited Summary</string>
+    <string name="next">Next</string>
+    <string name="entercontactpersonname">Please Enter Contact Person Name</string>
+    <string name="entercontactmobilenumber">Please Enter Contact Mobile Number</string>
+    <string name="entercontactemailid">Please Enter Contact Email ID</string>
+    <string name="enter_city_msg">City can\'t be blank.</string>
+    <string name="enter_dealer_msg">Dealer can\'t be blank.</string>
+    <string name="validcityordealer">Please Enter Valid City or Dealer Name</string>
+
+    <!-- Collection -->
+    <string name="enter_dealer_code">Store Code</string>
+    <string name="paymentMode">Mode of payments</string>
+    <string name="enter_dealer_name">Store Name</string>
+    <string name="add">Add</string>
+    <string name="amount">Amount</string>
+    <string name="chequeDate">Cheque Date</string>
+    <string name="chequeNo">Cheque Number</string>
+    <string name="ddDate">Demond Draft Date</string>
+    <string name="ddNo">Demond Draft No</string>
+    <string name="transactionId">Transaction ID</string>
+    <string name="transactionDate">Transaction Date</string>
+    <string name="msg_payment_mode">Please select mode of payment.</string>
+    <string name="date">DD/MM/YYYY</string>
+    <string name="rs">\u20A8</string>
+    <string name="Rs">\u20B9</string>
+    <!-- Indian rupee symbole -->
+    <!-- End -->
+
+
+    <!-- Order Booking -->
+    <string name="productcategoryP1">Product-P1</string>
+    <string name="productcategoryP2">Product-P2</string>
+    <string name="product">Product</string>
+    <string name="qty">Qty.</string>
+    <string name="dpvalue">DP.Value</string>
+    <string name="sr">Sr.</string>
+    <string name="quantity">Quantity</string>
+    <string name="value">Value</string>
+    <string name="cancelornot">Do you want to cancel?</string>
+    <string name="confirmationmessage">Confirmation Message</string>
+    <string name="delete_msg">Sure want to delete?</string>
+    <string name="saveornot">Once order has been placed cannot be modified or changed?</string>
+    <string name="qtyempty">QTY can not be empty</string>
+    <!-- End -->
+
+
+    <!-- Market Work -->
+    <string name="todaysbeat">Todays Planned Store</string>
+    <string name="othersbeat">Other Stores</string>
+    <string name="dealer">Dealer</string>
+    <string name="accountName">AccountName</string>
+    <string name="mobileNo">MobileNo</string>
+    <string name="accId">AccId</string>
+
+    <!--
+    <string name="mdtpurchase">MTD Purchase</string>
+    <string name="mdtsalevalidated">MTD Sale(Validated)</string>
+
+
+
+
+
+
+
+    -->
+
+    <string name="acmdtpurchase">AC MTD Purchase</string>
+    <string name="aclmdtpurchase">AC LMTD Purchase</string>
+    <string name="acmdtsalevalidated">AC MTD Sale(Validated)</string>
+    <string name="aclmdtsalevalidated">AC LMTD Sale(Validated)</string>
+    <string name="avmdtpurchase">AV MTD Purchase</string>
+    <string name="avlmdtpurchase">AV LMTD Purchase</string>
+    <string name="avmdtsalevalidated">AV MTD Sale(Validated)</string>
+    <string name="avlmdtsalevalidated">AV LMTD Sale(Validated)</string>
+    <string name="hamdtpurchase">HA MTD Purchase</string>
+    <string name="halmdtpurchase">HA LMTD Purchase</string>
+    <string name="hamdtsalevalidated">HA MTD Sale(Validated)</string>
+    <string name="halmdtsalevalidated">HA LMTD Sale(Validated)</string>
+    <string name="outlettarget">Store Target(Vol.)</string>
+    <string name="total_sale">Total Sale</string>
+    <string name="total_purchase">Total Purchase</string>
+    <string name="ach">ACH %</string>
+    <string name="lastVisitedDate">Last Visited Date</string>
+    <string name="onSite">On Site</string>
+    <string name="offSite">Off Site</string>
+    <string name="outletProfile">Store Profile</string>
+    <string name="create_feedabck">Create Feedback</string>
+    <string name="coverage">Coverage</string>
+    <string name="enter_Contact_Person_msg">Contact Person can\'t be blank.</string>
+    <string name="enter_landline_number">Mobile no. should be min 10 digit.</string>
+    <string name="datanotavailable">Data not available.</string>
+    <string name="selectdatefirst">Please Select Market/Weekly off Dates from Calendar.</string>
+
+    <!-- Visitor Details -->
+    <string name="name">Name</string>
+    <string name="empId">Emp.ID</string>
+    <string name="designation">Designation</string>
+    <string name="photo">Photo</string>
+    <string name="takePicture">Take a Picture</string>
+    <string name="visitorname">Please Enter Visitor Name</string>
+    <string name="visitorempid">Please Enter Emp.ID</string>
+
+    <!-- surveyquestions -->
+    <string name="datehint">dd/mm/yyyy</string>
+    <!-- End -->
+
+
+    <!-- BI Audit -->
+    <string name="biaudit">BI Audit</string>
+    <!-- End -->
+
+
+    <!-- Competition -->
+    <string name="ac">AC</string>
+    <string name="mwo">MWO</string>
+    <string name="panel">PANEL</string>
+    <string name="ref">REF</string>
+    <string name="wm">WM</string>
+    <string name="disp_qty"> Display Share</string>
+    <string name="mtd_sellout">Counter Share</string>
+    <string name="title_activity_counter_share_display_share">Counter Share</string>
+    <string name="store_manager_relationship">Store Manager Relationship</string>
+    <string name="vm_quality">VM Quality</string>
+    <string name="spc_strength">SPC Strength</string>
+    <string name="select_option">Please select one option:</string>
+    <!-- End -->
+
+
+    <!-- Scheme Available -->
+    <string name="schemeavailable">Scheme Available</string>
+    <string name="description">Description</string>
+    <string name="schemeExpiryDate">TO</string>
+    <string name="schemeStartDate">From</string>
+    <!-- End -->
+
+
+    <!-- Outlet Working -->
+    <string name="beatsubmitted">Beat already submitted</string>
+    <string name="createingdatabase">Please wait data is syncing with server &#8230;</string>
+    <string name="outlet_profile_basic">Basic</string>
+    <string name="outlet_profile_performance">Performance</string>
+    <string name="capture">Capture</string>
+    <string name="enlarge">Enlarge</string>
+    <string name="todays_planned_stores">Today\'s planned store</string>
+    <string name="other_stores">Other Stores</string>
+    <!-- End -->
+
+
+    <!-- Outlet Profile -->
+
+    <string name="no_profile_image">No Image Available</string>
+    <string name="unable_upload_profile_image">Unable to upload store profile Image</string>
+
+    <!-- End -->
+
+
+    <!-- Beat MAnagement -->
+    <string name="beatapproval">Beat Approval</string>
+    <string name="beatsummary">Beat Summary</string>
+    <string name="beatcreation">Beat Creation</string>
+    <string name="beatmanagement">Beat Management</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="syncing">Syncing &#8230;</string>
+    <!-- End -->
+
+    <string name="announcement">Announcement</string>
+    <string name="address">Address</string>
+    <string name="exit">Exit</string>
+    <string name="view_more">View More</string>
+
+    <!-- Planogram Screen -->
+    <string name="title_planogram">Planogram</string>
+    <string name="display_units">Display Units</string>
+    <string name="display_planogram">Display Planogram</string>
+    <string name="model">Model</string>
+    <string name="available">Available</string>
+    <string name="type">Type</string>
+    <string name="error14">Please answer all the questions.</string>
+
+    <!-- FMS Create Issue Screen -->
+    <string name="add_btn">+Add</string>
+    <string name="prompt_team">team</string>
+    <string name="feedback_id">Feedback id</string>
+    <string name="concern_team">Concern Team</string>
+    <string name="prompt_feedback_category">Select Feedback Category</string>
+    <string name="prompt_feedback_type">Select Feedback Type</string>
+    <string name="search">Search</string>
+    <string name="feedback_cat">"Feedback Cat"</string>
+    <string name="feedback_type">"Feedback Type"</string>
+    <string name="feedback_action">Feedback Action</string>
+    <string name="action">Action</string>
+    <string name="database_row_id">database_row_id</string>
+    <string name="please_select_dealer">Please select dealer.</string>
+    <string name="feedback_exist">Feedback with same combination already exist.</string>
+    <string name="unable_to_take_picture">Unable take picture. Make sure SD card inserted properly.</string>
+    <string name="invalid_store_selection">Invalid Store selection.</string>
+    <string name="feedback_submitted_successfully">Feedback submitted successfully.</string>
+
+    <!-- End -->
+
+    <string name="title_activity_fmsnotification">FMSNotificationActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Feedback Detail Screen -->
+    <string name="time_taken">Time Taken</string>
+    <string name="call_status">Call Status</string>
+    <string name="detail">Detail</string>
+    <string name="created_by">Created By</string>
+    <string name="created_on">Created On</string>
+    <string name="spoc">Spoc</string>
+    <string name="etr_by">ETR By</string>
+    <string name="rfc_on">RFC(Resolved/Disagree)On</string>
+    <string name="agree_disagree_by">Agree/Disagree By</string>
+    <string name="call_relook_status">Call Relook Status</string>
+    <string name="rfc_ok_nr_on">RFC(OK/NR)On</string>
+    <string name="close_by">Close By</string>
+
+    <!-- FMS Feed back tracker -->
+    <string name="feedback_tracker_header">Feedback Tracker</string>
+    <string name="load_more">Load More</string>
+    <string name="are_you_sure_you_want_to_navigate_away_from_this_page_saved_data_will_be_lost_">Are you sure you want to go back? Unsaved data will be lost.</string>
+    <string name="min_date_error">Min Date Error.</string>
+
+    <!-- Sync confirmation dialog strings -->
+    <string name="sync_confirmation_dialog_title">Select</string>
+    <string name="sync_confirmation_dialog_message">Please select your desired operation on data</string>
+    <string name="sync_confirmation_dialog_button_one">Submit</string>
+    <string name="sync_confirmation_dialog_button_two">Save</string>
+    <string name="sync_confirmation_dialog_button_negative">Cancel</string>
+    <string name="preparation_for_sync">Checking for sync data</string>
+    <string name="sync_list">Syncing List</string>
+
+    <!-- Sync permission dialog strings -->
+    <string name="sync_permission_dialog_title">Alert</string>
+    <string name="sync_permission_dialog_message">There are unsynced data available in your device. Please decide if you want to sync those data or you want to delete those data </string>
+    <string name="sync_permission_dialog_button_one">Sync</string>
+    <string name="sync_permission_dialog_button_two">No</string>
+
+    <!-- Delete operation messages -->
+    <string name="delete_success">Successfully deleted all unsynced data</string>
+    <string name="delete_fail">Could not delete all unsynced data</string>
+    <string name="not_online">Please be online</string>
+    <string name="sync_message_data_submit">Data submitted successfully</string>
+    <string name="sync_message_data_save">Data saved successfully</string>
+    <string name="storing_failed">Soemthing went wrong</string>
+    <string name="delete_all_confirmation">Are you sure you want to delete all elements?</string>
+    <string name="delete_all_fail">Could not delete data</string>
+    <string name="download_authorization_not_assign_to_you">Download authorization not assign to you</string>
+    <string name="error_occoured">Something went wrong.Please Contact to your administrator.</string>
+    <string name="get_address">Get Address</string>
+    <string name="download_data_alert">Please check items to be downloaded.</string>
+
+    <!-- EOL module -->
+    <string name="scheme_no">Scheme No.</string>
+    <string name="eol_product">Product</string>
+    <string name="eol_max_support">Max Support</string>
+    <string name="eol_order_qty">Order Qty</string>
+    <string name="eol_actual_support">Actual Support</string>
+    <string name="eol_support_per_unit">Support per Unit</string>
+    <string name="eol_scheme_detail">Scheme Detail</string>
+    <string name="eol_scheme_detail_header">EOL Scheme Detail</string>
+    <string name="eol_updated_scheme_detail_header">EOL Updated Scheme Detail</string>
+    <string name="eol_scheme_order_header">EOL Scheme Product Order</string>
+    <string name="eol_product_unit_support">Unit,Support</string>
+    <string name="eol_product_name">Product Name</string>
+    <string name="eol_ordered_product">Ordered Product</string>
+
+    <!-- Login Page -->
+    <string name="need_support">Need a support?</string>
+    <string name="call_us">Call us on 18001083366</string>
+    <string name="time">Between 9:30am to 6:30pm</string>
+
+    <!-- Outlet Profile -->
+    <string name="is_store_prifle_image_updated">store profile updated</string>
+    <string name="activity">Activity</string>
+    <string name="od_eol_order">OD/EOL Order</string>
+    <string name="feedback_detail">Feedback Detail</string>
+    <string name="checkin">Check in</string>
+    <string name="edit">Edit</string>
+    <string name="contact_already_exist">Contact already exists.</string>
+    <string name="no_contact_number">Contact number is not available.</string>
+    <string name="tracker">Tracker</string>
+    <string name="scheme_details">Scheme Details</string>
+    <string name="add_collection">Add Collection</string>
+    <string name="today_store_not_available">Today\'s stores not available</string>
+    <string name="plase_click_on_edit">Please click on edit button first.</string>
+    <string name="no_activity_found">No Activity Found</string>
+    <string name="sync_process_completed">Sync Process Completed</string>
+    <string name="security_exception">Security exception, Please Login Again</string>
+    <string name="you_have_been_logged_out">You have been logged out.</string>
+    <string name="please_select_user">Please select User to Approve/Reject Beat.</string>
+    <string name="user_id_not_in_format">User id not in format.</string>
+    <string name="you_are_logged_out">You are logged out, please login again to view more.</string>
+    <string name="no_data_received">No Data received.</string>
+    <string name="server_data_not_in_json">Server Data not in JSON</string>
+    <string name="some_data_not_downloaded">Some data was not downloaded, Kindly login again.</string>
+    <string name="data_saved_successfully">Data Saved Successfully.</string>
+    <string name="no_data_to_proceed">No Data to Proceed.</string>
+    <string name="invalid_data">Invalid Data.</string>
+    <string name="message_false">False.</string>
+    <string name="updated_successfully">Updated Successfully</string>
+    <string name="request_not_successful">Request not successful.</string>
+    <string name="error_contact_admin">Error: Please contact your administrator.</string>
+    <string name="please_select_action">Please select action.</string>
+    <string name="please_enter_remarks">Please enter remarks.</string>
+    <string name="please_enter_date">Please enter date.</string>
+    <string name="please_enter_value_other_then_zero">Please enter value other than zero.</string>
+    <string name="contact_is_already_added">Contact is successfully added</string>
+
+    <string-array name="display_area">
+        <item>Common Wall</item>
+        <item>Exclusive Wall</item>
+        <item>Display Stand</item>
+        <item>Podium</item>
+    </string-array>
+
+    <string name="no_option_found">No Option Found</string>
+    <string name="no_more_records">No More Records</string>
+    <string name="no_feedback_found">No Feedback Found.</string>
+
+    <string name="planogram_module_is_not_for_selected_store">Planogram Module is not for selected store</string>
+    <string name="display_share_module_is_not_for_selected_store">Display share Module is not for selected store</string>
+    <string name="counter_share_module_is_not_for_selected_store">Counter share Module is not for selected store</string>
+    <string name="pending_mandatory_modules">Pending Mandatory Modules</string>
+
+    <!-- RACE -->
+    <string name="product_audit">Product Audit</string>
+    <string name="display_area">Display Area</string>
+    <string name="display_sub_area">Display Sub Area</string>
+    <string name="wall_number">Wall Number</string>
+    <string name="row_number">Row Number</string>
+    <string name="brand">Wall Brand</string>
+    <string name="fixture_selection">Fixture Selection</string>
+    <string name="topper">Topper</string>
+    <string name="on">Switched On</string>
+    <string name="price_tag">Price Tag</string>
+    <string name="offers">Offers</string>
+    <string name="sticker">Sticker</string>
+    <string name="products">Product Audit</string>
+    <string name="update_product">Update Product</string>
+    <string name="sub_display_area">Sub Display Area</string>
+    <string name="on_product_posm">On Product Posm</string>
+    <string name="off_product_posm">Off Product Posm</string>
+    <string name="added">Added Products</string>
+    <string name="no_item_added">No products added</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="product_group">Product Group</string>
+    <string name="product_category">Product Category</string>
+    <string name="select_product_group">Select Product Group</string>
+    <string name="select_product_category">Select Product Category</string>
+    <string name="please_attend_the_mandatory_question_to_proceed_">"Please attend the mandatory question to proceed "</string>
+    <string name="saving_question_data">Saving Question Data</string>
+    <string name="updating">Updating...</string>
+    <string name="race_warninng_please_select_display_area">Please select display area.</string>
+    <string name="race_warninng_please_select_sub_display_area">Please select sub display area.</string>
+    <string name="race_warninng_please_select_row">Please select number of rows.</string>
+    <string name="race_warninng_please_select_wall">Please select number of walls.</string>
+    <string name="race_warninng_please_select_brand">Please select brand.</string>
+    <string name="select_sticker">Select Sticker</string>
+    <string name="posm_data_is_not_available">POSM data is not available.</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete?</string>
+    <string name="product_add">Product Add</string>
+    <string name="refresh_message">Are you sure you want to refresh the data ?</string>
+
+    <!-- SO Detail -->
+    <string name="service_number">Service Number</string>
+
+    <string name="asc_code">Asc Code</string>
+    <string name="branch_code">Branch Code</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="close_date">Closed Date</string>
+    <string name="claim_date">Claim Reg. Date</string>
+    <string name="claim_number">Service Order No.</string>
+    <string name="defect_desc">Defect Desc</string>
+    <string name="gcic_reason_desc">GCIC Reason Desc</string>
+    <string name="gcic_status">GCIC Status</string>
+    <string name="received_date">Received Date</string>
+    <string name="rejection_reason">RLS Rejection Reason</string>
+    <string name="rejection_remark">RLS Rejection Remarks</string>
+    <string name="repair_desc">Repair Desc</string>
+    <string name="rls_status">RLS Status</string>
+    <string name="saw_date_time">SAW Date Time</string>
+    <string name="saw_number">SAW No.</string>
+    <string name="saw_status">SAW Status</string>
+    <string name="serial_no_imei">Serial No.</string>
+    <string name="status_id">RLS DT/GRMS Status</string>
+    <string name="please_type_service_order_number">Please Type Service Order Number.</string>
+    <string name="no_data_availble">No data available.</string>
+    <string name="pending_unsynced_data">" pending unsynced data."</string>
+    <string name="bp_name">BP Name</string>
+    <string name="msc_code">MSC Code</string>
+    <string name="product_model">Product Model</string>
+
+    <!-- Other store -->
+
+    <string name="search_store">Search Store</string>
+    <string name="search_city">Search City</string>
+    <string name="no_schemes_available">No schemes available.</string>
+    <string name="getting">Getting...</string>
+
+    <!-- Dealer creationg -->
+
+    <string name="please_select_district">Please select District.</string>
+    <string name="please_select_city">Please select City.</string>
+    <string name="please_select_pin">Please select Pin.</string>
+    <string name="please_select_reason_of_appontment">Please select Reason of Appointment.</string>
+    <string name="please_select_firm_type">Please select Firm Type.</string>
+    <string name="please_fill_firm_name">Please fill Firm Name.</string>
+    <string name="please_fill_street_name">Please fill Street Name.</string>
+    <string name="please_fill_firm_email">Please fill Firm Email.</string>
+    <string name="please_fill_firm_mobile">Please fill Firm Mobile.</string>
+    <string name="please_fill_pan">Please fill PAN.</string>
+    <string name="please_fill_tin">Please fill TIN.</string>
+    <string name="please_select_dealer_type">Please select Dealer Type.</string>
+    <string name="please_select_parent_dealer_code">Please select Parent Dealer Code.</string>
+    <string name="please_fill_owner_name">Please fill Owner Name.</string>
+    <string name="please_fill_owner_mob">Please fill Owner Mobile.</string>
+    <string name="please_fill_contact_person_name">Please fill Contact Person Name.</string>
+    <string name="please_fill_contact_person_mob">Please fill Contact Person Mobile.</string>
+    <string name="please_select_day_off">Please select Day Off.</string>
+    <string name="please_fill_counter_size">Please fill Counter Size.</string>
+    <string name="please_take_tin_photo">Please Select Tin No. Photo.</string>
+    <string name="please_take_pan_photo">Please Select Pan No. Photo.</string>
+    <string name="please_take_gsb_photo">Please Select GSB Photo.</string>
+    <string name="please_select_promoter_required">Please select Promoter Required.</string>
+    <string name="please_select_consumer_finance_available">Please select Consumer Finance Available.</string>
+    <string name="please_fill_owner_dob">Please fill Owner DOB.</string>
+    <string name="duplicate_msg_dealer_creation">Dealer already exist.Please contact to Adminstrator.</string>
+
+    <string-array name="reason_of_appointment_values">
+        <item>Select</item>
+        <item>New Appointment</item>
+        <item>Cancellation</item>
+        <item>Vacant Territory</item>
+        <item>Division of Territory</item>
+    </string-array>
+    <string-array name="type_of_firm">
+        <item>Select</item>
+        <item>Partner</item>
+        <item>Private Limited</item>
+        <item>Property</item>
+    </string-array>
+    <string-array name="day_off">
+        <item>Select</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="coverage_mode">
+        <item>Select</item>
+        <item>Order Booking</item>
+        <item>Van Sales</item>
+        <item>CounterSales</item>
+    </string-array>
+    <string-array name="yes_no">
+        <item>Select</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="dealer_type">
+        <item>Select</item>
+        <item>Parent</item>
+        <item>Child</item>
+    </string-array>
+
+    <string name="please_contact_admin">Please Contact Admin</string>
+    <string name="please_select_parent_company">Please select Parent Company.</string>
+    <string name="district_not_available_please_contact_admin">District Not Available Please Contact Admin</string>
+    <string name="parentcompany_not_available_please_contact_admin">Parent Company Not Available. Please Contact Admin</string>
+    <string name="district_not_available">District Not Available Please Contact Admin</string>
+    <string name="parent_company_not_available">Parent Company Not Available</string>
+    <string name="av">AV</string>
+    <string name="ha">HA</string>
+    <string name="module_code">Model Code</string>
+    <string name="requested_date">Requested Date</string>
+    <string name="tracking_no">Tracking No</string>
+    <string name="repair_status">Repair Status</string>
+    <string name="url_gcic_search_cookies"> http://cybersvc2.samsungcsportal.com/cyberservice/csc/account/withoutm.jsp?locale_id=in_en&amp;cid=in_mobileapp_gsssamsungcares_tracking_20150922</string>
+    <string name="url_gcic_search_service">http://cybersvc2.samsungcsportal.com/cyberservice/csc/account/withoutm_search_list.jsp</string>
+    <string name="so_detail">RLS </string>
+    <string name="so_search">GCIC </string>
+    <string name="no_data_availble_rls">RLS data not available.</string>
+    <string name="no_data_availble_gcic">GCIC data not available.</string>
+    <string name="you_have_no_access_to_view_this_module">You have no access to view this module</string>
+    <string name="landline_no">Landline No</string>
+    <string name="spc_name">SPC Name</string>
+    <string name="spc_category">SPC Category</string>
+    <string name="store_manager_name">Store Manager Name</string>
+    <string name="sm_mobile">SM Mobile</string>
+    <string name="sm_email_id">SM Email Id</string>
+    <string name="alternate_email_id">Alternate Email Id</string>
+    <string name="tin_number">Tin Number</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="title_activity_outlet_profile">OutletProfile</string>
+    <string name="title_activity_lms">LMS</string>
+    <string name="title_activity_lmslist">LMSListActivity</string>
+    <string name="title_activity_lmscreate_leave">LMSCreateLeave</string>
+    <string name="title_activity_calender">CalenderActivity</string>
+    <string name="title_activity_lmsleave_detail">LMSLeaveDetailActivity</string>
+
+ <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pending_with">Pending With</string>
+    <string name="expense_type">Expense Type</string>
+    <string name="bill_no">Bill No.</string>
+    <string name="documents">Documents</string>
+    <string name="expense_select">Select</string>
+    <string name="new_expense">New Expense</string>
+    <string name="billable">Billable</string>
+    <string name="billable_to">Billable To</string>
+    <string name="enter_billable_to">Enter Billable To</string>
+    <string name="ems_comments">Comments</string>
+    <string name="enter_comments">Enter Comments</string>
+    <string name="new_bill">New Bill</string>
+    <string name="add_bill">Add Bill</string>
+    <string name="ems_date">Date</string>
+    <string name="bill_number">Bill Number</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="submitted">Submitted</string>
+    <string name="pending">Pending</string>
+    <string name="approved">Approved</string>
+    <string name="notifications">Notifications</string>
+    <string name="delete">Delete</string>
+    <string name="search_expense">Search Expense by expense type</string>
+    <string name="expense_detail">Expense Detail</string>
+    <string name="bill_detail">Bill Detail</string>
+    <string name="bill_document_pick_msg">Please select a Bill Image Document Source.</string>
+    <string name="bill_document_gallery">Gallery</string>
+    <string name="bill_document_camera">Camera</string>
+    <string name="select_document">Select Document</string>
+    <string name="expense_listing">Expense Listing</string>
+
+
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_bill_number">Enter Bill Number</string>
+    <string name="title_activity_lmsleave_action">LMSLeaveActionActivity</string>
+
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:weightSum="2"
+    android:id="@+id/ll_otherStoreListItem"
+    
+     >
+
+ <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:orientation="vertical" >
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_name_otherStoreListItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:fontType="roboto_light" />
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_distance_otherStoreListItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:textSize="11sp"
+            smartdost:fontType="roboto_light" 
+            android:padding="3dp"
+            android:text="dff"
+            />
+        
+    </LinearLayout>
+    
+
+    <com.samsung.ssc.CustomUI.SSCTextView
+        android:id="@+id/tv_code_otherStoreListItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_smaller"
+        smartdost:fontType="roboto_light" 
+        android:singleLine="true"
+        android:gravity="right"
+        />
+
+</LinearLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/other_store_list_view_item.xml -->

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingStart="@dimen/margin_10"
+        >
+
+        <TextView
+            android:id="@+id/document_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/document_imageview"
+            android:layout_toStartOf="@+id/document_imageview"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/ems_item_textcolor"
+            android:textSize="@dimen/small_text_size" />
+
+        <ImageView
+            android:id="@+id/document_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingRight="@dimen/margin_7"
+            android:paddingTop="@dimen/margin_15"
+            android:paddingBottom="@dimen/margin_15"
+            android:layout_toLeftOf="@+id/delete_document_imageview"
+            android:layout_toStartOf="@+id/delete_document_imageview"
+            android:src="@drawable/document_icon" />
+
+        <ImageView
+            android:id="@+id/delete_document_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_7"
+            android:paddingRight="@dimen/margin_15"
+            android:paddingTop="@dimen/margin_15"
+            android:paddingBottom="@dimen/margin_15"
+            android:src="@drawable/ems_close_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/ems_divider_and_date_color" />
+
+</LinearLayout>

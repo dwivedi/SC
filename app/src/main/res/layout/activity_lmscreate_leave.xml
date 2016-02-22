@@ -1,0 +1,151 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".LMS.LMSCreateLeaveActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/etLMSSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Subject"
+                        android:maxLength="150"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spinnerLeaveType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etLMSSubject"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="@color/colorPrimary"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/colorPrimary"
+                    app:ms_arrowSize="14dp"
+                    app:ms_baseColor="@color/colorPrimary"
+                    app:ms_enableFloatingLabel="true"
+                    app:ms_errorColor="@android:color/holo_red_light"
+                    app:ms_floatingLabelColor="@color/colorPrimary"
+                    app:ms_floatingLabelText="Leave Type"
+                    app:ms_highlightColor="@color/colorPrimary"
+                    app:ms_hint="Leave Type"
+                    app:ms_thickness="1dp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/spinnerLeaveType"
+                    android:layout_alignStart="@+id/spinnerLeaveType"
+                    android:layout_below="@+id/spinnerLeaveType"
+                    android:background="@drawable/shado_bg">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Leave Dates"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:onClick="onCalendarClick"
+                        android:src="@drawable/ic_action_calc" />
+
+                    <LinearLayout
+
+                        android:id="@+id/layoutDateViewContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageButton"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/etLMSRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <EditText
+
+                        android:id="@+id/etLMSRemarkText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Remark"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

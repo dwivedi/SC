@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey" >
+
+    <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@id/sDActionBar1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="4dp"/>
+
+
+
+
+    <ScrollView
+        android:id="@+id/activity_questionnaire_scrolllayout_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/support1"
+        android:layout_below="@+id/toolbar" >
+
+        <LinearLayout
+            android:id="@+id/activity_questionnaire_linearlayout_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+
+      <LinearLayout
+        android:id="@+id/support1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+
+        <com.samsung.ssc.CustomUI.SSCButton
+            android:id="@+id/bt_proceed_questionnaireActivty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonblue"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onProceedButtonClick"
+            android:padding="10dp"
+            android:text="@string/submit"
+            android:textColor="@drawable/button_text_color_selector"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:buttonFontType="roboto_medium" />
+
+
+        <com.samsung.ssc.CustomUI.SSCButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonblue"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onCancelClick"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="@drawable/button_text_color_selector"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:buttonFontType="roboto_medium" />
+    </LinearLayout>
+
+</RelativeLayout>

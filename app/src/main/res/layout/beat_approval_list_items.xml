@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/storeName"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight=".2"
+            android:textColor="@color/button_notpressed"
+            android:textStyle="bold" android:textSize="14sp">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/selectBeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginRight="5dp"
+            android:focusable="false"
+            android:visibility="invisible" />
+    </TableRow>
+
+</RelativeLayout>

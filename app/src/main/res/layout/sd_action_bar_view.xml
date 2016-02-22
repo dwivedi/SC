@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    >
+
+    <com.samsung.ssc.CustomUI.SSCTextView
+        android:id="@+id/tv_title_sdActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ib_up_sdActionBar"
+        android:background="@drawable/action_bar_background"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:gravity="right"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small_seventeen"
+        smartdost:fontType="roboto_medium" />
+
+    <ImageButton
+        android:background="@drawable/action_bar_background" 
+        android:id="@+id/ib_up_sdActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_title_sdActionBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/back_icon" />
+
+</RelativeLayout>

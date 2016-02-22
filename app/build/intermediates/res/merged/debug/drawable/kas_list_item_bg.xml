@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+            
+             <corners android:radius="6dp"/> 
+            <gradient android:angle="90" android:centerColor="#1f7be5" android:endColor="#1f7be5" android:startColor="#4a9bea" />
+</shape><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/drawable/kas_list_item_bg.xml -->

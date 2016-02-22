@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.samsung.ssc"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.samsung.ssc.EMS.ExpenseListingActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:elevation="4dp"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/expense_status_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:fillViewport="false"
+                android:theme="@style/expense_tab_theme"
+                app1:tabIndicatorColor="@color/tab_strip_line_color"
+                app1:tabSelectedTextColor="@color/ems_tab_textcolor"
+                app1:tabTextColor="#ffffff"
+                app:tabMode="scrollable"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appBarlayout"
+            android:orientation="vertical">
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ems_tab_bg"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/expense_type_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expense_type"
+                    android:textColor="@color/text_color"
+
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="33%" />
+
+                <TextView
+                    android:id="@+id/pending_with_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toEndOf="@+id/expense_type_textview"
+                    android:layout_toRightOf="@+id/expense_type_textview"
+                    android:text="@string/pending_with"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="33%" />
+            </android.support.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/expense_list_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnExpanceActivityNewExpance"
+            style="@style/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="onNewExpenseClick"
+            android:src="@drawable/plus_icon"
+            app1:fabSize="normal"
+            app1:rippleColor="@color/ems_add_bill_backgroundTint_color"
+            app:backgroundTint="@color/ems_add_bill_bg_color"
+            app:borderWidth="@dimen/margin_2"
+            app:elevation="@dimen/margin_2"></android.support.design.widget.FloatingActionButton>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+<!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/activity_expense_listing1.xml -->

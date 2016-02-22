@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:padding="12dip" >
+
+    <com.samsung.ssc.CustomUI.SSCTextView
+        android:id="@+id/tv_module_name_kpiListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/support2"
+        android:gravity="center|left"
+        android:text="BI"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_small_sixteen"
+        smartdost:fontType="roboto_medium" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:id="@+id/support2" >
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_unread_kpiListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:text="244"
+            android:textColor="@color/light_red"
+            android:textSize="@dimen/text_size_small_sixteen"
+            smartdost:fontType="roboto_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="@dimen/text_size_small_sixteen"
+             />
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_total_kpiListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="500"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_small_sixteen"
+            smartdost:fontType="roboto_medium" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/kpi_list_item2.xml -->

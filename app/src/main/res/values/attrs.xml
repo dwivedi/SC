@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SSCTextView">
+        <attr name="fontName" format="string" />
+        <attr name="fontType" />
+    </declare-styleable>
+    <declare-styleable name="SSCButton">
+        <attr name="buttonFontName" format="string" />
+        <attr name="buttonFontType" />
+    </declare-styleable>
+    <declare-styleable name="SSCEditText">
+        <attr name="edittextFontName" format="string" />
+        <attr name="edittextFontType" />
+    </declare-styleable>
+    <declare-styleable name="SSCActionBar">
+        <attr name="actionTitle" format="string" />
+    </declare-styleable>
+
+    <attr name="fontType" format="enum">
+        <enum name="roboto_light" value="1" />
+        <enum name="roboto_medium" value="2" />
+        <enum name="neuton_extralight" value="3" />
+    </attr>
+    <attr name="buttonFontType" format="enum">
+        <enum name="roboto_light" value="1" />
+        <enum name="roboto_medium" value="2" />
+    </attr>
+    <attr name="edittextFontType" format="enum">
+        <enum name="roboto_light" value="1" />
+        <enum name="roboto_medium" value="2" />
+    </attr>
+
+    <declare-styleable name="ExtendedListView">
+        <attr name="scrollBarPanel" format="reference" />
+        <attr name="scrollBarPanelInAnimation" format="reference" />
+        <attr name="scrollBarPanelOutAnimation" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0" />
+            <enum name="y" value="1" />
+            <enum name="z" value="2" />
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction" />
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+
+    <!-- process button -->
+
+    <declare-styleable name="ProcessButton">
+        <attr name="pb_textProgress" format="string" />
+        <attr name="pb_textComplete" format="string" />
+        <attr name="pb_textError" format="string" />
+        <attr name="pb_colorProgress" format="color" />
+        <attr name="pb_colorComplete" format="color" />
+        <attr name="pb_colorError" format="color" />
+    </declare-styleable>
+    <declare-styleable name="FlatButton">
+        <attr name="pb_colorPressed" format="color" />
+        <attr name="pb_colorNormal" format="color" />
+        <attr name="pb_cornerRadius" format="dimension" />
+    </declare-styleable>
+
+</resources>

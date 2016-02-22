@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<!-- 
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        layout="@layout/header" />
+     -->
+       <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/sDActionBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        smartdost:actionTitle="@string/geotag" />
+    
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sDActionBar1"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp" />
+
+            <RelativeLayout
+                android:id="@+id/activity_geotag_relativelayout_upload_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageViewGeoTapPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:onClick="onPhotoCaptureClick"
+                    android:src="@drawable/camera" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/user_profile_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imageViewGeoTapPhoto"
+                    android:text="@string/upload_photo"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/userProfileUserLatLocation"
+                    style="@style/user_profile_text_view"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Latitude    "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/button_notpressed" />
+
+                <TextView
+                    android:id="@+id/userProfileUserLatLocationValue"
+                    style="@style/user_profile_text_view"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/userProfileUserLatLocation"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/button_notpressed" />
+
+                <TextView
+                    android:id="@+id/userProfileUserLongLocation"
+                    style="@style/user_profile_text_view"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userProfileUserLatLocation"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Longitude"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/button_notpressed" />
+
+                <TextView
+                    android:id="@+id/userProfileUserLongLocationValue"
+                    style="@style/user_profile_text_view"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userProfileUserLatLocationValue"
+                    android:layout_toRightOf="@id/userProfileUserLongLocation"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/button_notpressed"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/bt_getAddress_geoTag"
+                    style="@style/button_style"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_toRightOf="@+id/userProfileUserLatLocationValue"
+                    android:onClick="onGetAddressClick"
+                    android:text="@string/get_address" />
+
+                <TextView
+                    android:id="@+id/userProfileUserAddress"
+                    style="@style/user_profile_text_view"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userProfileUserLongLocation"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Address    "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/button_notpressed" />
+
+                <TextView
+                    android:id="@+id/userProfileUserAddressValue"
+                    style="@style/user_profile_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userProfileUserLongLocationValue"
+                    android:layout_toRightOf="@id/userProfileUserAddress"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                   
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/button_notpressed" />
+            </RelativeLayout>
+
+              <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:text="If you do not want to cover this outlet please press back."
+                android:textColor="@color/red" />
+              
+            <Button
+                android:id="@+id/btnGeoTagNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/buttonblue"
+                android:padding="10dp"
+                android:text="@string/next"
+              android:textColor="@drawable/button_text_color_selector"
+                android:textStyle="bold"
+                android:onClick="onNextButtonClick"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

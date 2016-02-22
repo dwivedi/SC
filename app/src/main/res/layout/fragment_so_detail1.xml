@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity" >
+
+     
+
+  <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="10" >
+
+        <com.samsung.ssc.CustomUI.SSCEditText
+            android:id="@+id/et_soNumberSoDetail"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="7"
+            android:background="@drawable/edit_text_background"
+            android:gravity="left|center_vertical"
+            android:hint="@string/service_number"
+            android:maxLength="50"
+            android:padding="@dimen/edit_text_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_small_sixteen"
+            smartdost:edittextFontType="roboto_light" />
+
+        <com.samsung.ssc.CustomUI.SSCButton
+            android:id="@+id/btnLoginSubmit"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/buttonblue"
+            android:clickable="true"
+            android:onClick="onSubmitButtonClick"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/submit"
+            android:textColor="@drawable/button_text_color_selector"
+            android:textSize="@dimen/text_size_small_sixteen"
+            smartdost:buttonFontType="roboto_medium" />
+    </LinearLayout> -->
+
+    <ScrollView
+        android:id="@+id/scrollView_activity_so_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_containerSoDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/branch_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_branchNameRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/bp_name"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_branchCodeRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toLeftOf="@+id/textView1"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/msc_code"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_ascCodeRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/claim_number"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_claimNumberRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/claim_date"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_claimDateRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/gcic_status"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_gcicStatusRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/gcic_reason_desc"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_gcicReasonDescRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/rls_status"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_rlsStatusRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/product"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_productRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/serial_no_imei"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_serialNumberIMEIRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/received_date"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_receivedDateRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/close_date"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_closeDateRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/saw_number"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_sawNumberRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/saw_date_time"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_sawDateTimeRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/saw_status"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_sawStatusRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/defect_desc"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_defectDescRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/repair_desc"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_repairDescRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/status_id"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_statusIDRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/rejection_reason"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_rejectionReasonRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:padding="5dp"
+                        android:text="@string/rejection_remark"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/tv_rejectionRemarkRODetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_small_sixteen"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+     
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/textview_eventcalendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/headerblue"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/title_calender"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" >
+        </TextView>
+
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center|right"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/close_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_calendarpopup_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_eventcalendar_header"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/dispDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/monthprev"
+                android:layout_width="45dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/prev_arrow" />
+            <!-- android:onClick="btnPrevClick" -->
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="FEB,2013"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/monthnext"
+                android:layout_width="45dip"
+                android:layout_height="35dip"
+                android:layout_alignBaseline="@+id/monthprev"
+                android:layout_alignBottom="@+id/monthprev"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/next_arrow" />
+            <!-- android:onClick="btnNextClick" -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_cal_heading_bg_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dispDate"
+            android:background="@drawable/headerblue"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/mon"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tue"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/wed"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/thu"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/fri"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sat"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sun"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonLayout"
+            android:layout_below="@+id/layout_cal_heading_bg_date"
+            android:layout_marginTop="2dp"
+            android:background="@color/light_blue"
+            android:cacheColorHint="@android:color/transparent"
+            android:fadingEdge="none"
+            android:horizontalSpacing="2dp"
+            android:listSelector="@null"
+            android:numColumns="7"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dp" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="1dp"
+            android:background="@color/light_blue"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/saveBtn"
+                style="@style/button_style"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/save" />
+
+            <Button
+                android:id="@+id/calenderCancelBtn"
+                style="@style/button_style"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/cancel" />
+        </LinearLayout>
+    </RelativeLayout>
+
+ 
+</RelativeLayout>

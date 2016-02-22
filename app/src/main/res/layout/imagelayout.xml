@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:stretchColumns="0,1" >
+
+              
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        style="@style/user_profile_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_column="0"
+                        android:layout_weight=".3"
+                        android:text="@string/photo"
+                        android:textColor="@color/button_notpressed" />
+
+                    <ImageView
+                        android:id="@+id/photo"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_column="1"
+                        android:layout_weight=".6"
+                        android:src="@drawable/camera" />
+                </TableRow>
+
+                
+              
+            </TableLayout>
+     

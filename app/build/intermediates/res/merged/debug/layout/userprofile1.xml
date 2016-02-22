@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/sDActionBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        smartdost:actionTitle="@string/title_user_profile" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_action_button_storeOutletProfileFragmentBasic"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" >
+
+                    <Button
+                        android:id="@+id/bt_camera_userProfileFragmentBasic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/camera_icon"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/capture"
+                        android:textColor="@color/new_blue"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_enlarge_userProfile1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/edit_text_background"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_outletimage_userProfileFragmentBasic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/img_user"
+                        android:paddingRight="10dp"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#669900"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1.3"
+                            android:gravity="center_vertical"
+                            android:text="Enlarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.7"
+                            android:background="#5f8f00"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/zoom_icon" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#d9dde9" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_smaller"
+                    smartdost:fontType="roboto_medium" />
+
+                <EditText
+                    android:id="@+id/empFirstName"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight=".6"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/edit_text_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_smaller" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_last_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_smaller"
+                    smartdost:fontType="roboto_medium" />
+
+                <EditText
+                    android:id="@+id/empLastName"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight=".6"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/edit_text_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_smaller" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_Email"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_smaller"
+                    smartdost:fontType="roboto_medium" />
+
+                <EditText
+                    android:id="@+id/empMail1"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight=".6"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/edit_text_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_smaller" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_alternate_email"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_smaller"
+                    smartdost:fontType="roboto_medium" />
+
+                <EditText
+                    android:id="@+id/empEmail2"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight=".6"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/edit_text_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_smaller" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:id="@+id/tvUserProfileMobileNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_mobile_calling"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_smaller"
+                    smartdost:fontType="roboto_medium" />
+
+                <EditText
+                    android:id="@+id/empMobileCalling"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight=".6"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="@dimen/edit_text_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_smaller" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:id="@+id/tvAltUserMobileNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_mobile_sd"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_smaller"
+                    smartdost:fontType="roboto_medium" />
+
+                <EditText
+                    android:id="@+id/empMobileSd"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight=".6"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="@dimen/edit_text_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_smaller" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="@string/emp_address"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_smaller"
+                    smartdost:fontType="roboto_medium" />
+
+                <EditText
+                    android:id="@+id/empAddress"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight=".6"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:padding="@dimen/edit_text_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_smaller" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <com.samsung.ssc.CustomUI.SSCTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_weight=".4"
+                    android:gravity="center_vertical"
+                    android:text="@string/pincode"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_smaller"
+                    smartdost:fontType="roboto_medium" />
+
+                <EditText
+                    android:id="@+id/pincode"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight=".6"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/edit_text_padding"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_smaller" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_action_button_storeOutletProfileFragmentBasic"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <com.samsung.ssc.CustomUI.SSCButton
+            android:id="@+id/updateBtn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonblue"
+            android:text="@string/edit"
+            android:textColor="@drawable/button_text_color_selector"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:buttonFontType="roboto_medium" />
+
+        <com.samsung.ssc.CustomUI.SSCButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonblue"
+            android:text="@string/cancel"
+            android:textColor="@drawable/button_text_color_selector"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:buttonFontType="roboto_medium" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/userprofile1.xml -->

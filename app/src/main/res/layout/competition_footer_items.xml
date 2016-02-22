@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        android:gravity="center" >
+        
+        
+        <!--  <Button
+            android:id="@+id/summary"
+            style="@style/button_style"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonblue"
+            android:text="@string/summary" /> -->
+
+        <Button
+            android:id="@+id/save"
+            style="@style/button_style"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textColor="@drawable/button_text_color_selector"
+            android:background="@drawable/buttonblue"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/button_style"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textColor="@drawable/button_text_color_selector"
+            android:background="@drawable/buttonblue"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

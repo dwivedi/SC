@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.samsung.smartdost.ui.CustomUI.BadgeButton
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/notificationTextBadgeRowItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+<!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/kpi_list_item1.xml -->

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_blue"
+        android:paddingLeft="10dp" >
+
+        <ImageButton
+            android:id="@+id/ib_up_sdActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/back_icon" />
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_title_sdActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tracker"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_small_seventeen"
+            smartdost:fontType="roboto_medium" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:onClick="onFilterButtonClick"
+            android:src="@android:drawable/ic_menu_search" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/linerLayoutFMSTrackerSearchResultViewSection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewFMSTrackerPendingCount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:lines="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:id="@+id/textViewFMSTrackerSelectedStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFMSTrackerPendingCount"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="View All"
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/listHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFMSTrackerSelectedStatus"
+                android:weightSum="5" >
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/fms_list_header_bg"
+                    android:drawableRight="@drawable/sort"
+                    android:onClick="onTeamClick"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Team"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/fms_list_header_bg"
+                    android:drawableRight="@drawable/sort"
+                    android:onClick="onCategoryClick"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Category"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:background="@drawable/fms_list_header_bg"
+                    android:drawableRight="@drawable/sort"
+                    android:onClick="onStatusClick"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Status"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/fms_list_header_bg"
+                    android:drawableRight="@drawable/sort"
+                    android:onClick="onUpdatedOnClick"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Updated On"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/fms_list_header_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linerLayoutFMSTrackerFeedbackActionPanel"
+                android:layout_below="@+id/listHeader"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:clickable="false" >
+
+                <ListView
+                    android:id="@+id/listViewFMSTrackerFeedbackList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerLayoutFMSTrackerFeedbackActionPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:weightSum="1" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linerLayoutFMSTrackerSearchViewSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/fms_tracker_search_section" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

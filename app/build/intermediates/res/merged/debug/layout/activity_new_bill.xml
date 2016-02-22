@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.samsung.ssc"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".EMS.NewBillActivity">
+
+
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+
+    <RelativeLayout
+            android:visibility="gone"
+        android:id="@+id/new_bill_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ems_header_bg">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/new_back_icon" />
+
+        <TextView
+            android:id="@+id/bill_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_toEndOf="@id/back_btn"
+            android:layout_toLeftOf="@+id/search_btn"
+            android:layout_toRightOf="@id/back_btn"
+            android:layout_toStartOf="@+id/search_btn"
+            android:text="@string/new_bill"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small_sixteen" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_actions_bill_layout"
+        android:layout_below="@id/toolbar"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/date_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/ems_date"
+                    android:textColor="@color/expense_type_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="35%" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@+id/date_textview"
+                    android:layout_toRightOf="@+id/date_textview"
+                    android:orientation="horizontal"
+                    app:layout_widthPercent="65%">
+
+                    <TextView
+                        android:id="@+id/date_value_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/select_date_imageview"
+                        android:layout_toStartOf="@+id/select_date_imageview"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/ems_item_textcolor"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <ImageView
+                        android:id="@+id/select_date_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:padding="@dimen/margin_10"
+                        android:src="@drawable/drop_down_icon" />
+                </RelativeLayout>
+            </android.support.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/bill_number_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/bill_number"
+                    android:textColor="@color/expense_type_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="35%" />
+
+                <EditText
+                    android:id="@+id/bill_number_editext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@id/bill_number_textview"
+                    android:layout_toRightOf="@id/bill_number_textview"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_bill_number"
+                    android:singleLine="true"
+                    android:textColor="@color/ems_item_textcolor"
+                    android:textColorHint="@color/expense_type_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="65%" />
+            </android.support.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:text="@string/description"
+                android:textColor="@color/expense_type_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <EditText
+                android:id="@+id/description_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_150"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="@string/enter_description"
+                android:padding="@dimen/margin_10"
+                android:scrollbars="vertical"
+                android:textColor="@color/ems_item_textcolor"
+                android:textColorHint="@color/expense_type_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/amount_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/amount"
+                    android:textColor="@color/expense_type_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="35%" />
+
+                <EditText
+                    android:id="@+id/amount_editetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@id/amount_textview"
+                    android:layout_toRightOf="@id/amount_textview"
+                    android:background="@null"
+                    android:digits="0123456789."
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_amount"
+                    android:inputType="numberDecimal"
+                    android:maxLength="7"
+                    android:singleLine="true"
+                    android:textColor="@color/ems_item_textcolor"
+                    android:textColorHint="@color/expense_type_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="65%" />
+            </android.support.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/documents"
+                    android:textColor="@color/expense_type_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="35%" />
+
+                <TextView
+                    android:id="@+id/upload_documents_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/add_bill_color"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/margin_5"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingRight="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_5"
+                    android:text="@string/upload_documents"
+                    android:textColor="@color/white" />
+            </android.support.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <LinearLayout
+                android:id="@+id/documents_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/user_actions_bill_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <ImageView
+            android:id="@+id/submit_bill_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/new_expense_submit_bg_color"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/submit_icon"
+            android:visibility="visible" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/update_bill_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/update_bill_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_2"
+                android:layout_marginRight="@dimen/margin_2"
+                android:background="@color/new_expense_submit_bg_color"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/update"
+                app:layout_widthPercent="50%" />
+
+
+            <ImageView
+                android:id="@+id/delete_bill_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/update_bill_btn"
+                android:layout_toRightOf="@+id/update_bill_btn"
+                android:background="@color/new_expense_submit_bg_color"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/ems_delete"
+                app:layout_widthPercent="50%" />
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/activity_new_bill.xml -->

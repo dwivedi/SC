@@ -1,0 +1,346 @@
+-injars 'F:\SC_TFS\SalesCatalyst Android\Dev\SC_STUDIO\app\build\intermediates\multi-dex\debug\allclasses.jar'
+-outjars 'F:\SC_TFS\SalesCatalyst Android\Dev\SC_STUDIO\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'F:\Android Studio\sdk\build-tools\23.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration 'F:\SC_TFS\SalesCatalyst Android\Dev\SC_STUDIO\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.samsung.ssc.SSCApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.samsung.ssc.SplashActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.ServiceIdList {
+    <init>();
+}
+
+-keep class com.samsung.ssc.LoginActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.Announcement {
+    <init>();
+}
+
+-keep class com.samsung.ssc.AttendanceActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.StoreWorking {
+    <init>();
+}
+
+-keep class com.samsung.ssc.MainMenuActivityListGrid {
+    <init>();
+}
+
+-keep class com.samsung.ssc.UserProfile {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.OutletWorking1 {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.ActivityDashboardChild {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.ActivityDashboardChildNonStoreWise {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.QuestionnaireActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.BookOrder {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.StockEscalation {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.EOLOrderActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.SellOutProjection {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.Collections {
+    <init>();
+}
+
+-keep class com.samsung.ssc.FullScreenImageActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.Geotag {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.SchemeAvailable {
+    <init>();
+}
+
+-keep class com.samsung.ssc.CalendarView {
+    <init>();
+}
+
+-keep class com.samsung.ssc.BeatCreation {
+    <init>();
+}
+
+-keep class com.samsung.ssc.BeatApproval {
+    <init>();
+}
+
+-keep class com.samsung.ssc.BeatManagement {
+    <init>();
+}
+
+-keep class com.samsung.ssc.NotificationsListFragment2 {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.OutletProfile2 {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.AddCollectionDialog {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.SchemeDetails {
+    <init>();
+}
+
+-keep class com.samsung.ssc.BeatsDetail {
+    <init>();
+}
+
+-keep class com.samsung.ssc.reports.DashboardReports {
+    <init>();
+}
+
+-keep class com.samsung.ssc.util.updateApp.UpdateApp {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.PalnogramActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.PalnogramActivity1 {
+    <init>();
+}
+
+-keep class com.samsung.ssc.KPIListActivity1 {
+    <init>();
+}
+
+-keep class com.samsung.ssc.sync.SyncService {
+    <init>();
+}
+
+-keep class com.samsung.ssc.GCMRegIdService {
+    <init>();
+}
+
+-keep class com.samsung.ssc.services.UpdateNotificationService {
+    <init>();
+}
+
+-keep class com.samsung.ssc.GCMBroadcastReceiver {
+    <init>();
+}
+
+-keep class com.samsung.ssc.MyTerritoriesActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.CounterShareDisplayShareActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.FMSCreateFeedbackActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.FMSFeedbackTracker1 {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.ActivityFullScreenImageView {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.FeedbackDetailActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.TakeActionFeedbackDetailActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.DealerSelectionActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.EOLNotificationShow {
+    <init>();
+}
+
+-keep class com.samsung.ssc.DealerCreation {
+    <init>();
+}
+
+-keep class com.samsung.ssc.DealerHistory {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.RaceProductAuditActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.RaceProductAuditCartActivity1 {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.RaceProductDetailActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.RaceProductAuditCartItemUpdateActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.SODetailActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.TodaySchemesActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.MOM.MOMCreateActiviity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.MOM.MOMDetailsActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.MOM.MOMSearchActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.MOM.MOMListActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.provider.SSCContentProvider {
+    <init>();
+}
+
+-keep class com.samsung.ssc.receiver.DateChangeBroadcastReceiver {
+    <init>();
+}
+
+-keep class com.samsung.ssc.services.AuthenticatorService {
+    <init>();
+}
+
+-keep class com.samsung.ssc.services.SyncServiceSyncAdapter {
+    <init>();
+}
+
+-keep class com.samsung.ssc.activitymodule.OutletProfile {
+    <init>();
+}
+
+-keep class com.samsung.ssc.LMS.LMSListActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.LMS.LMSCreateLeaveActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.LMS.LeaveCalenderActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.LMS.LMSLeaveDetailActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.EMS.ExpenseListingActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.EMS.NewExpenseActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.EMS.NewBillActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.EMS.SearchExpenseListingActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.LMS.LMSLeaveActionActivity {
+    <init>();
+}
+
+-keep class com.samsung.ssc.LMS.LeaveListFilterActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

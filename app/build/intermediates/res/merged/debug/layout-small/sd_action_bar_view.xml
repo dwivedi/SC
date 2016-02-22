@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/new_blue"
+    android:padding="10dp" >
+
+    <ImageButton
+        android:id="@+id/ib_up_sdActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/back_icon" />
+
+    <com.samsung.ssc.CustomUI.SSCTextView
+        android:id="@+id/tv_title_sdActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small_seventeen"
+        smartdost:fontType="roboto_medium" />
+
+</RelativeLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout-small/sd_action_bar_view.xml -->

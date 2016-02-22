@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/sDActionBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        smartdost:actionTitle="@string/kas" />
+
+    <ListView
+        android:id="@+id/kpiListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#d9dde9"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

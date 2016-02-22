@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvExpandavleGroupLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+   
+    android:paddingLeft="45dp"
+
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:text="Group Title"
+    android:textColor="@android:color/black"
+    android:textSize="17dp" />
+<!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/expandable_group_layout.xml -->

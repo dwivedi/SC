@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/header" /> -->
+
+    <RelativeLayout
+        android:id="@+id/competitorsLayout"
+        style="@style/rectLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:visibility="invisible" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/questions"
+                style="@style/user_profile_text_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight=".3"
+                android:textColor="@color/button_notpressed"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/brand1"
+                style="@style/user_profile_text_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:text="Samsung"
+                android:textColor="@color/button_notpressed"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/brand2"
+                style="@style/user_profile_text_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text="LG"
+                android:textColor="@color/button_notpressed"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/brand3"
+                style="@style/user_profile_text_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:text="WP/Sony"
+                android:textColor="@color/button_notpressed"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/brand4"
+                style="@style/user_profile_text_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:text="Others"
+                android:textColor="@color/button_notpressed"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/listLayout"
+        style="@style/rectLayoutStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tabs"
+        android:layout_below="@+id/competitorsLayout"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/panelTab"
+            style="@style/competetion_tab_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:text="@string/panel" />
+
+        <TextView
+            android:id="@+id/refTab"
+            style="@style/competetion_tab_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/ref" />
+
+        <TextView
+            android:id="@+id/wmTab"
+            style="@style/competetion_tab_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/wm" />
+
+        <TextView
+            android:id="@+id/acTab"
+            style="@style/competetion_tab_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/ac" />
+
+        <TextView
+            android:id="@+id/mwoTab"
+            style="@style/competetion_tab_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mwo" />
+    </LinearLayout>
+
+</RelativeLayout>

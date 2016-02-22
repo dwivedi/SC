@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/ll_actionButtonLayout_eolNotification"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_schemeDetailContainer_eolNotification"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+              
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+
+
+      
+
+
+    <LinearLayout
+        android:id="@+id/ll_actionButtonLayout_eolNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/exit_eolNotification"
+            style="@style/button_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight=".5"
+            android:padding="6dp"
+            android:text="@string/exit"
+            android:onClick="onExitClick"
+             />
+
+        <Button
+            android:id="@+id/viewMore_eolNotification"
+            style="@style/button_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight=".5"
+            android:padding="6dp"
+            android:text="@string/view_more"
+             android:onClick="onViewMoreClick"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

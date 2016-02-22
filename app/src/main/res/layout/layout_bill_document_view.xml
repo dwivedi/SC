@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingStart="@dimen/margin_10" >
+
+        <TextView
+            android:id="@+id/bill_document_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_toLeftOf="@+id/check_bill_document_imageview"
+            android:layout_toStartOf="@+id/check_bill_document_imageview"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/ems_item_textcolor"
+            android:textSize="@dimen/small_text_size" />
+
+        <ImageView
+            android:id="@+id/check_bill_document_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_2"
+            android:layout_marginRight="@dimen/margin_2"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/check_bill_document_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/ems_divider_and_date_color" />
+
+</LinearLayout>

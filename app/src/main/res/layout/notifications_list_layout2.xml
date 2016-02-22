@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/listHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/notificationsListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loadMoreButton"
+        android:layout_below="@+id/listHeader"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#d9dde9"
+        android:dividerHeight="0.5dp" />
+
+    <Button
+        android:id="@+id/loadMoreButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/buttonblue"
+        android:padding="10dp"
+        android:text="@string/load_more"
+       android:textColor="@drawable/button_text_color_selector" />
+
+</RelativeLayout>

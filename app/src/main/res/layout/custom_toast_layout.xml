@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toast_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/custom_toast_background"
+    android:orientation="horizontal"
+    android:padding="8dp"
+     >
+
+    
+	   
+    	<TextView
+        	android:id="@+id/tv"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center_vertical"
+        	android:textColor="#CEE3F6"
+        	android:paddingLeft="5dp"
+        	android:text="Custom toast" />
+
+   
+</LinearLayout>

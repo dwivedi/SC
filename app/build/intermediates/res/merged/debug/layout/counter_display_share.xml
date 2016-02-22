@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headerCounterDisplayShare"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerblue" >
+
+        <Button
+            android:id="@+id/saveBtnCounterDisplayShare"
+            style="@style/button_style"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttongreen"
+            android:onClick="onProceedButtonClick"
+            android:text="@string/submit" />
+
+        <TextView
+            android:id="@+id/headercentretextCounterDisplayShar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/headersize"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancelBtnCounterDisplayShare"
+            style="@style/button_style"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttongraylight"
+            android:text="@string/cancel"
+            android:textColor="#000000"
+            android:onClick="onCanceButtonlClick"
+            
+             />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/elvCounterDisplayShare"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llComProductGroupContainer"
+        android:layout_below="@+id/headerCounterDisplayShare"
+        android:scrollingCache="false" >
+    </ExpandableListView>
+
+    <LinearLayout
+        android:id="@+id/llComProductGroupContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/counter_display_share.xml -->

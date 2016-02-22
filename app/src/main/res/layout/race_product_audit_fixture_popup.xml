@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fixture_selection"
+                android:textColor="@color/new_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.samsung.ssc.CustomUI.SSCTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight=".4"
+                android:gravity="center_vertical"
+                android:text="@string/display_area"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:fontType="roboto_medium" />
+
+            <com.samsung.ssc.CustomUI.SSCEditText
+                android:id="@+id/etDisplayArea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight=".6"
+                android:drawableRight="@drawable/drop_down"
+                android:focusable="false"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/edit_text_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:edittextFontType="roboto_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.samsung.ssc.CustomUI.SSCTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight=".4"
+                android:gravity="center_vertical"
+                android:text="@string/display_sub_area"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:fontType="roboto_medium" />
+
+            <com.samsung.ssc.CustomUI.SSCEditText
+                android:id="@+id/etSubDisplayArea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight=".6"
+                android:drawableRight="@drawable/drop_down"
+                android:focusable="false"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/edit_text_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:edittextFontType="roboto_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_SpinnerBrandContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <com.samsung.ssc.CustomUI.SSCTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight=".4"
+                android:gravity="center_vertical"
+                android:text="@string/brand"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:fontType="roboto_medium" />
+
+            <com.samsung.ssc.CustomUI.SSCEditText
+                android:id="@+id/etBrand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight=".6"
+                android:drawableRight="@drawable/drop_down"
+                android:focusable="false"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/edit_text_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:edittextFontType="roboto_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_SpinnerWallContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <com.samsung.ssc.CustomUI.SSCTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight=".4"
+                android:gravity="center_vertical"
+                android:text="@string/wall_number"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:fontType="roboto_medium" />
+
+            <com.samsung.ssc.CustomUI.SSCEditText
+                android:id="@+id/etWallNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight=".6"
+                android:drawableRight="@drawable/drop_down"
+                android:focusable="false"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/edit_text_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:edittextFontType="roboto_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_SpinnerRowContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <com.samsung.ssc.CustomUI.SSCTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_weight=".4"
+                android:gravity="center_vertical"
+                android:text="@string/row_number"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:fontType="roboto_medium" />
+
+            <com.samsung.ssc.CustomUI.SSCEditText
+                android:id="@+id/etRowNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight=".6"
+                android:drawableRight="@drawable/drop_down"
+                android:focusable="false"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/edit_text_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:edittextFontType="roboto_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_action_button_storeOutletProfileFragmentBasic"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <com.samsung.ssc.CustomUI.SSCButton
+                android:id="@+id/btnRaceFixtureOk"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonblue"
+                android:text="@string/ok"
+                android:textColor="@drawable/button_text_color_selector"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:buttonFontType="roboto_medium" />
+
+            <com.samsung.ssc.CustomUI.SSCButton
+                android:id="@+id/btnRaceFixtureCancel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonblue"
+                android:text="@string/cancel"
+                android:textColor="@drawable/button_text_color_selector"
+                android:textSize="@dimen/text_size_smaller"
+                smartdost:buttonFontType="roboto_medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

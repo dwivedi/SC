@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/questions"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight=".3" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/brand1"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="Samsung"
+            android:textColor="@color/button_notpressed"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/brand2"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="LG"
+            android:textColor="@color/button_notpressed"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/brand3"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="WP"
+            android:textColor="@color/button_notpressed"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/brand4"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:text="Other"
+            android:textColor="@color/button_notpressed"
+            android:textStyle="bold" >
+        </TextView>
+    </TableRow>
+
+</RelativeLayout>

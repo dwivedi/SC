@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity" >
+
+    <com.samsung.ssc.CustomUI.SSCTextView
+        android:id="@+id/tv_no_item_product_audit_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/no_item_added"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_smaller"
+        android:visibility="gone"
+        smartdost:fontType="roboto_medium" />
+
+    <ExpandableListView
+        android:id="@+id/el_parentLevel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollingCache="false"
+        android:transcriptMode="alwaysScroll"
+         >
+    </ExpandableListView>
+
+</LinearLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/product_audit_av_cart.xml -->

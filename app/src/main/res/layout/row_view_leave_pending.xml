@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="8dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textViewLMSLeaveAppliedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ems_status_updated_color"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textViewLeaveCreatedBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewLMSLeaveAppliedDate"
+                android:text="Leave Title"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textViewLMSLeaveSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewLeaveCreatedBy"
+                android:layout_alignStart="@+id/textViewLeaveCreatedBy"
+                android:layout_below="@+id/textViewLeaveCreatedBy"
+                android:layout_marginLeft="4dp"
+                android:layout_toLeftOf="@+id/textViewLMSNumberOfDays"
+                android:text="Ashish Dwivedi"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ems_status_updated_color"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/textViewLMSNumberOfDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textViewLMSLeaveSubject"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="3dp"
+                android:text="4\nDays"
+                android:textColor="@color/text_color"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

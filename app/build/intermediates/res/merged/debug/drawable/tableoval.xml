@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#FFFFFF"
+        android:centerColor="#FFFFFF"
+        android:endColor="#FCFFFF"
+        android:angle="45"/>
+    <padding android:left="6dp" 
+        android:top="6dp"
+        android:right="6dp"
+        android:bottom="6dp" />
+    <stroke android:width="1dp"
+        android:color="@color/greytext"/>
+      </shape>
+    
+
+<!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/drawable/tableoval.xml -->

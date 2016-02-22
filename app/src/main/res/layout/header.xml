@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/headerblue" >
+
+    <TextView
+        android:id="@+id/headercentretext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Header"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/headersize"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/quickmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/header_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="#00000000"
+        android:padding="5dp"
+        android:src="@drawable/icon_save_contact"
+        android:visibility="gone" />
+
+</RelativeLayout>

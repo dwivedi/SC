@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ems_tab_bg"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingStart="@dimen/margin_10"
+        >
+
+        <TextView
+            android:id="@+id/bill_list_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/close_bill_document_list_imageview"
+            android:layout_toStartOf="@+id/close_bill_document_list_imageview"
+            android:text="@string/select_document"
+            android:textColor="@color/ems_item_textcolor"
+            android:textSize="@dimen/text_size_small_sixteen" />
+
+        <ImageView
+            android:id="@+id/close_bill_document_list_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_10"
+            android:onClick="onCloseBillDocumentDialog"
+            
+            android:src="@drawable/ems_close_icon" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/expense_type_list_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

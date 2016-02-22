@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/logo_loader1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/logo_loader2"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/logo_loader3"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/logo_loader4"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/logo_loader5"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/logo_loader6"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/logo_loader7"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/logo_loader8"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/logo_loader9"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/logo_loader10"
+        android:duration="100"/>
+
+</animation-list><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/drawable/custom_progress_dialog_animation.xml -->

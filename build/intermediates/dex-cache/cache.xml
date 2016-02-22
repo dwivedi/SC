@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\SC_STUDIO\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="F:\SC_STUDIO\app\build\intermediates\pre-dexed\debug\classes-ab8aa4608022e7a54d1a175e9f8f3e89fd6fe9dd.jar" />
+    </item>
+    <item
+        jar="F:\SC_STUDIO\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="F:\SC_STUDIO\app\build\intermediates\pre-dexed\debug\classes-ae240c5a0d8cc001f68fb0a1393f24011a82b397.jar" />
+    </item>
+
+</items>

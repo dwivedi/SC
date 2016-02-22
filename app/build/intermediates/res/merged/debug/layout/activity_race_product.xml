@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+   <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/sDActionBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      
+        smartdost:actionTitle="Race Demo" />
+    <com.samsung.ssc.CustomUI.SSCEditText
+        android:id="@+id/et_product_name_race"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text_background"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/edit_text_padding"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_smaller"
+        smartdost:edittextFontType="roboto_light" />
+
+    <ListView
+        android:id="@+id/lv_race"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/activity_race_product.xml -->

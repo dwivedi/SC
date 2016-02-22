@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@id/sDActionBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        smartdost:actionTitle="Dealer Creation" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Reason Of Appointment" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/reasonofappointmentspinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:entries="@array/reason_of_appointment_values"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Firm Type" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/firm_type_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:entries="@array/type_of_firm"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Firm Name" />
+
+                <EditText
+                    android:id="@+id/firm_name_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:maxLength="60"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="District" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/district_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="City/Town" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/city_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Pin Code" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/pincode_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Street Name" />
+
+                <EditText
+                    android:id="@+id/street_name_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:maxLength="60"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Landline No." />
+
+                <EditText
+                    android:id="@+id/landlineno_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Firm Mobile" />
+
+                <EditText
+                    android:id="@+id/firm_mobno_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Firm Email" />
+
+                <EditText
+                    android:id="@+id/firm_email_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:maxLength="30"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Parent Company" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/parent_company_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Dealer Type" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/dealer_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:entries="@array/dealer_type"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/parentdealerLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Parent Dealer Code" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/parentdealer_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="PAN" />
+
+                <EditText
+                    android:id="@+id/pan_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="TIN" />
+
+                <EditText
+                    android:id="@+id/tin_name_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:maxLength="15"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Owner Name" />
+
+                <EditText
+                    android:id="@+id/owner_name_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:maxLength="60"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Owner Mobile" />
+
+                <EditText
+                    android:id="@+id/ownermob_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Contact Person Name" />
+
+                <EditText
+                    android:id="@+id/contactperson_name_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:maxLength="60"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Contact Person Mobile" />
+
+                <EditText
+                    android:id="@+id/contactperson_mob_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Day Off" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/dayoff_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:entries="@array/day_off"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Counter Size(ttl val)" />
+
+                <EditText
+                    android:id="@+id/totalcountersize_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Store size(Sq.ft.)" />
+
+                <EditText
+                    android:id="@+id/storesize_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Prm Code" />
+
+                <EditText
+                    android:id="@+id/prmcode_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:gravity="center_vertical"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="TIN No.Photo" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.6" >
+
+                    <ImageView
+                        android:id="@+id/btnview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/snapshot_bg"
+                        android:onClick="onIvSnapshotClick"
+                        android:scaleType="centerCrop" />
+
+                    <Button
+                        android:id="@+id/tinnophoto_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_snapshot"
+                        android:onClick="onSpanShotClick" />
+
+                    <Button
+                        android:id="@+id/btnEditSnapShotdealercreation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bt_edit_image"
+                        android:onClick="onSpanShotClick"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="PAN No.Photo" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.6" >
+
+                    <ImageView
+                        android:id="@+id/btnview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/snapshot_bg"
+                        android:onClick="onIvSnapshotClick"
+                        android:scaleType="centerCrop" />
+
+                    <Button
+                        android:id="@+id/pannophoto_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_snapshot"
+                        android:onClick="onSpanShotClick" />
+
+                    <Button
+                        android:id="@+id/btnEditSnapShotdealercreation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bt_edit_image"
+                        android:onClick="onSpanShotClick"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="GSB Photo" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.6" >
+
+                    <ImageView
+                        android:id="@+id/btnview3"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/snapshot_bg"
+                        android:onClick="onIvSnapshotClick"
+                        android:scaleType="centerCrop" />
+
+                    <Button
+                        android:id="@+id/gsbphoto_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_snapshot"
+                        android:onClick="onSpanShotClick" />
+
+                    <Button
+                        android:id="@+id/btnEditSnapShotdealercreation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bt_edit_image"
+                        android:onClick="onSpanShotClick"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Owner Photo" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.6" >
+
+                    <ImageView
+                        android:id="@+id/btnview4"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/snapshot_bg"
+                        android:onClick="onIvSnapshotClick"
+                        android:scaleType="centerCrop" />
+
+                    <Button
+                        android:id="@+id/ownerphoto_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_snapshot"
+                        android:onClick="onSpanShotClick" />
+
+                    <Button
+                        android:id="@+id/btnEditSnapShotdealercreation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bt_edit_image"
+                        android:onClick="onSpanShotClick"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Contact Person Photo" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.6" >
+
+                    <ImageView
+                        android:id="@+id/btnview5"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/snapshot_bg"
+                        android:onClick="onIvSnapshotClick"
+                        android:scaleType="centerCrop" />
+
+                    <Button
+                        android:id="@+id/contactphoto_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_snapshot"
+                        android:onClick="onSpanShotClick" />
+
+                    <Button
+                        android:id="@+id/btnEditSnapShotdealercreation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bt_edit_image"
+                        android:onClick="onSpanShotClick"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Promoter Required" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/promoterrequired_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:entries="@array/yes_no"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".4"
+                    android:text="Consumer Finance Available" />
+
+                <com.samsung.smartdost.ui.CustomUI.CustomeSpinner
+                    android:id="@+id/consumerfinanceavailable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".6"
+                    android:entries="@array/yes_no"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:weightSum="1" >
+
+                <TextView
+                    style="@style/textview_style_width_0"
+                    android:layout_weight=".3"
+                    android:text="Owner DOB" />
+
+                <EditText
+                    android:id="@+id/ownerdob_edittext"
+                    style="@style/edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".5"
+                    android:editable="false"
+                    android:gravity="center_vertical" />
+
+                <ImageButton
+                    android:id="@+id/ownerdob_imagebutton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/calendericon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <!--
+                     <com.samsung.smartdost.ui.CustomUI.ActionProcessButton
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/blue_button_background"
+                    android:text="@string/submit" />
+
+                <com.samsung.smartdost.ui.CustomUI.ActionProcessButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/blue_button_background"
+                    android:text="@string/cancel" />
+                -->
+
+                <com.samsung.ssc.CustomUI.SSCButton
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonblue"
+                    android:text="@string/submit"
+                    android:textColor="@drawable/button_text_color_selector"
+                    android:textSize="@dimen/text_size_smaller"
+                    smartdost:buttonFontType="roboto_medium" />
+
+                <com.samsung.ssc.CustomUI.SSCButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonblue"
+                    android:text="@string/cancel"
+                    android:textColor="@drawable/button_text_color_selector"
+                    android:textSize="@dimen/text_size_smaller"
+                    smartdost:buttonFontType="roboto_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

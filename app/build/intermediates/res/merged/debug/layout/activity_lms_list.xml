@@ -1,0 +1,71 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.samsung.ssc"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.samsung.ssc.LMS.LMSListActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayoutLMSList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            app:tabMode="scrollable"
+            android:background="@color/colorPrimary"
+            android:theme="@style/expense_tab_theme"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app1:tabIndicatorColor="@color/tab_strip_line_color"
+            app1:tabSelectedTextColor="@color/ems_tab_textcolor"
+            app1:tabTextColor="#ffffff">
+
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerLMSList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCreateNewLMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/margin_15"
+        android:onClick="onNewLeaveCreateClick"
+        android:src="@drawable/plus_icon"
+        app:backgroundTint="@color/ems_add_bill_bg_color"
+        app:borderWidth="@dimen/margin_2"
+        app:elevation="@dimen/margin_2"
+        app1:fabSize="normal"
+        style="@style/floating_action_button"
+        app1:rippleColor="@color/ems_add_bill_backgroundTint_color" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+<!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/activity_lms_list.xml -->

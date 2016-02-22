@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    
+     <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/sDActionBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      
+        smartdost:actionTitle="@string/feedback_detail" />
+
+  
+    
+    
+    
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_footerFeedbackDetail"
+        android:layout_below="@+id/sDActionBar1"
+        android:fillViewport="true"
+        android:padding="@dimen/list_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Feedback Basic Info UI starts here -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fms_table_row"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/tv_team_name_table_row"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#f5f5f5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/small_margin"
+                   
+                    android:text="@string/feedback_id"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fms_table_item_border_bg" />
+
+                <TextView
+                    android:id="@+id/tvFeedbackID_feedbackDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#f5f5f5"
+                    android:gravity="center_vertical|right"
+                    android:padding="@dimen/small_margin"
+                   
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                android:background="@drawable/fms_table_row"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#f5f5f5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/small_margin"
+                    
+                    android:text="Concerned Team"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fms_table_item_border_bg" />
+
+                <TextView
+                    android:id="@+id/tvConcernedTeam_feedbackDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#f5f5f5"
+                    android:gravity="center_vertical|right"
+                    android:padding="@dimen/small_margin"
+                 
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/table_header_fms_create_issue"
+                android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                android:background="@drawable/fms_table_row"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#f5f5f5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/small_margin"
+              
+                    android:text="Feedback Category"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fms_table_item_border_bg" />
+
+                <TextView
+                    android:id="@+id/tvfeedbackCategory_feedbackDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#f5f5f5"
+                    android:gravity="center_vertical|right"
+                    android:padding="@dimen/small_margin"
+                
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fms_table_row"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#f5f5f5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/small_margin"
+               
+                    android:text="@string/feedback_type"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fms_table_item_border_bg" />
+
+                <TextView
+                    android:id="@+id/tvfeedbackType_feedbackDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#f5f5f5"
+                    android:gravity="center_vertical|right"
+                    android:padding="@dimen/small_margin"
+              
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <!-- Feedback Basic Info UI ends here -->
+
+
+            <!-- Call Status UI starts here -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fms_table_row"
+                android:gravity="center"
+                android:padding="@dimen/small_margin"
+          
+                android:text="Call Status"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/small_text_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+                android:background="@drawable/fms_table_row"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#f5f5f5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/small_margin"
+             
+                    android:text="Time Taken"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fms_table_item_border_bg" />
+
+                <TextView
+                    android:id="@+id/tvTimeTaken_feedbackDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#f5f5f5"
+                    android:gravity="center_vertical|right"
+                    android:padding="@dimen/small_margin"
+               
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <!-- Call Status UI ends here -->
+            <!-- Feedback Detail UI starts here -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/add_btn_height"
+                android:background="@drawable/fms_table_row"
+                android:gravity="center"
+                android:padding="@dimen/small_margin"
+                android:singleLine="true"
+                android:text="Detail"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/small_text_size" />
+
+            <LinearLayout
+                android:id="@+id/conteer_LogDetails_feedbackDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/iv_SnapShotActivity_feedbackDetail"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+              
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_footerFeedbackDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/list_padding"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btTakeAction_fFeedbackDetail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/reportee_list_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/buttonblue"
+            android:onClick="onTakeActionClick"
+            android:text="Take Action"
+            android:textColor="@drawable/button_text_color_selector"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llSeparator_FeedbackDetail"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/offwhite"
+            android:orientation="horizontal" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/reportee_list_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/buttonblue"
+            android:onClick="onCancelClick"
+            android:text="@string/cancel"
+            android:textColor="@drawable/button_text_color_selector"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

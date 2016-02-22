@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity" >
+
+    <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/sDActionBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      
+        smartdost:actionTitle="@string/outletProfile" />
+
+  
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_outletProfile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+    </TabHost>
+
+    <!-- <ScrollView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_above="@+id/btnLayout" -->
+    <!-- android:layout_below="@+id/header" -->
+    <!-- android:layout_margin="5dp" -->
+    <!-- android:background="@color/white" -->
+    <!-- android:fillViewport="true" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <TableLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginBottom="5dp" -->
+    <!-- android:layout_marginTop="5dp" -->
+    <!-- android:stretchColumns="0,1" > -->
+
+
+    <!-- <TableRow -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="70dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- style="@style/user_profile_text_view" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="0" -->
+    <!-- android:layout_weight=".25" -->
+    <!-- android:text="@string/emp_photo" -->
+    <!-- android:visibility="invisible" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/enlargeImage" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="1" -->
+    <!-- android:layout_marginRight="22dp" -->
+    <!-- android:layout_weight=".25" -->
+    <!-- android:clickable="true" -->
+    <!-- android:gravity="center_vertical|center_horizontal" -->
+    <!-- android:text="Enlarge" -->
+    <!-- android:textColor="@color/customblue" -->
+    <!-- android:textSize="13dp" -->
+    <!-- android:visibility="visible" /> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="70dp" -->
+    <!-- android:layout_column="1" -->
+    <!-- android:layout_weight=".5" -->
+    <!-- android:gravity="right" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/outletimage" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginRight="20dp" -->
+    <!-- android:adjustViewBounds="true" -->
+    <!-- android:background="@drawable/camera" -->
+    <!-- android:scaleType="fitXY" -->
+    <!-- android:tag="I" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </TableRow> -->
+
+
+    <!-- <TableRow -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="70dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- style="@style/user_profile_text_view" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="0" -->
+    <!-- android:layout_weight=".4" -->
+    <!-- android:text="@string/enter_dealer_name" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/dealerName" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="1" -->
+    <!-- android:layout_marginRight="5dp" -->
+    <!-- android:layout_weight=".6" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" /> -->
+    <!-- </TableRow> -->
+
+
+    <!-- <TableRow -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="70dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- style="@style/user_profile_text_view" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="0" -->
+    <!-- android:layout_weight=".4" -->
+    <!-- android:text="@string/enter_dealer_code" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/dealerCode" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="1" -->
+    <!-- android:layout_marginRight="5dp" -->
+    <!-- android:layout_weight=".6" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" /> -->
+    <!-- </TableRow> -->
+
+
+    <!-- <TableRow -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="70dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- style="@style/user_profile_text_view" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="0" -->
+    <!-- android:layout_weight=".4" -->
+    <!-- android:text="@string/contactPerson" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/ContactPerson" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="1" -->
+    <!-- android:layout_marginRight="5dp" -->
+    <!-- android:layout_weight=".6" /> -->
+    <!-- </TableRow> -->
+
+
+    <!-- <TableRow -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="70dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/user_profile_text_view_contact_mobile" -->
+    <!-- style="@style/user_profile_text_view" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="0" -->
+    <!-- android:layout_weight=".4" -->
+    <!-- android:text="@string/contactMobile" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/ContactMobile" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="1" -->
+    <!-- android:layout_marginRight="5dp" -->
+    <!-- android:layout_weight=".6" -->
+    <!-- android:maxLength="10" -->
+    <!-- android:numeric="integer" /> -->
+    <!-- </TableRow> -->
+
+
+    <!-- <TableRow -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="70dp" > -->
+
+
+    <!-- <TextView -->
+    <!-- style="@style/user_profile_text_view" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="0" -->
+    <!-- android:layout_weight=".4" -->
+    <!-- android:text="@string/contactEmail" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/ContactEmail" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_column="1" -->
+    <!-- android:layout_marginRight="5dp" -->
+    <!-- android:layout_weight=".6" -->
+    <!-- android:inputType="textEmailAddress" /> -->
+    <!-- </TableRow> -->
+    <!-- </TableLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:orientation="horizontal" -->
+    <!-- android:weightSum="1" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/activity_outlet_profile_button_mtd_records" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_margin="5dp" -->
+    <!-- android:layout_marginRight="2.5dp" -->
+    <!-- android:layout_weight="0.5" -->
+    <!-- android:background="@drawable/buttonblue" -->
+    <!-- android:text="MTD" -->
+    <!-- android:textColor="@color/white" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/activity_outlet_profile_button_lmtd_records" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_margin="5dp" -->
+    <!-- android:layout_marginRight="2.5dp" -->
+    <!-- android:layout_weight="0.5" -->
+    <!-- android:background="@drawable/blue_border" -->
+    <!-- android:text="LMCF" -->
+    <!-- android:textColor="@color/customblue" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/activity_outlet_profile_linearlayout_mtd_records" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/acmdtpurchase" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/acmdtpurchase" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/acmdtSale" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/acmdtsalevalidated" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/avmdtpurchase" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/avmdtpurchase" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/avmdtSale" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/avmdtsalevalidated" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/hamdtpurchase" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/hamdtpurchase" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/hamdtSale" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/hamdtsalevalidated" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/activity_outlet_profile_linearlayout_lmtd_records" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:visibility="gone" > -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/aclmdtpurchase" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/aclmdtpurchase" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/aclmdtSale" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/aclmdtsalevalidated" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/avlmdtpurchase" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/avlmdtpurchase" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/avlmdtSale" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/avlmdtsalevalidated" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/halmdtpurchase" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/halmdtpurchase" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/halmdtSale" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/halmdtsalevalidated" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/outletTarget" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/outlettarget" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/totalSale" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/total_sale" /> -->
+    <!-- <EditText -->
+    <!-- android:id="@+id/totalPurchase" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/total_purchase" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/ach" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/ach" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/lastVisitedDate" -->
+    <!-- style="@style/edit_field_style" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="2dp" -->
+    <!-- android:cursorVisible="false" -->
+    <!-- android:editable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:focusableInTouchMode="false" -->
+    <!-- android:hint="@string/lastVisitedDate" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </ScrollView> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/btnLayout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_marginBottom="2dp" -->
+    <!-- android:layout_marginLeft="5dp" -->
+    <!-- android:layout_marginRight="5dp" -->
+    <!-- android:background="@color/white" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <TextView -->
+    <!-- style="@style/user_profile_text_view" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:text="@string/coverage" /> -->
+
+
+    <!-- <RadioGroup -->
+    <!-- android:id="@+id/groupcoverage" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="1dp" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <RadioButton -->
+    <!-- android:id="@+id/radiobuttOnsite" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:checked="true" -->
+    <!-- android:clickable="false" -->
+    <!-- android:enabled="false" -->
+    <!-- android:text="@string/onSite" -->
+    <!-- android:textColor="@color/text_color" /> -->
+
+
+    <!-- <RadioButton -->
+    <!-- android:id="@+id/radiobuttonOffSite" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:clickable="false" -->
+    <!-- android:enabled="false" -->
+    <!-- android:text="@string/offSite" -->
+    <!-- android:textColor="@color/text_color" /> -->
+    <!-- </RadioGroup> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:gravity="center" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/update" -->
+    <!-- android:layout_width="100dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_margin="5dp" -->
+    <!-- android:background="@drawable/buttonblue" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="@string/update" -->
+    <!-- android:textColor="@android:color/white" -->
+    <!-- android:textStyle="bold" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/next" -->
+    <!-- android:layout_width="100dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_margin="5dp" -->
+    <!-- android:background="@drawable/buttonblue" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="@string/next" -->
+    <!-- android:textColor="@android:color/white" -->
+    <!-- android:textStyle="bold" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+     <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@id/sDActionBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        smartdost:actionTitle="@string/od_eol_order" />
+
+    <LinearLayout
+        android:id="@+id/ll_EolOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sDActionBar1"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+          >
+
+        <TextView
+            android:id="@+id/tv_schemeNo_eolOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scheme_no"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/spinnerEOLScheem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DADADA"
+            android:drawableRight="@drawable/droparo"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="none"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tabelHeader_eolOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_EolOrder"
+        android:background="@color/table_header_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3.5" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/eol_product"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/eol_order_qty"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/eol_support_per_unit"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewEOLScheem"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_footer_eolOrder"
+        android:layout_below="@+id/ll_tabelHeader_eolOrder"
+        android:animationCache="false"
+        android:descendantFocusability="afterDescendants"
+        android:focusable="false"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_footer_eolOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_submit_eolOrder"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonblue"
+            android:onClick="onProceedButtonClick"
+            android:text="@string/submit"
+            android:textColor="@drawable/button_text_color_selector" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonblue"
+            android:onClick="onCancelButtonClick"
+            android:text="@string/cancel"
+            android:textColor="@drawable/button_text_color_selector" />
+    </LinearLayout>
+
+   
+
+</RelativeLayout>

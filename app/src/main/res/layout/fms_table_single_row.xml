@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_header_fms_create_issue"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fms_table_row"
+    android:orientation="horizontal"
+    android:weightSum="13" >
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:background="@color/fms_table_item_border_bg" />
+
+    <TextView
+        android:id="@+id/tv_team_name_table_row"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:padding="@dimen/small_margin"
+        android:singleLine="true"
+        android:text="Team"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/small_text_size"
+        android:background="#f5f5f5"
+         />
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:background="@color/fms_table_item_border_bg" />
+
+    <TextView
+        android:id="@+id/tv_feedback_category_table_row"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:padding="@dimen/small_margin"
+        android:singleLine="true"
+        android:text="Feedback Category"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/small_text_size" 
+        android:background="#f5f5f5"
+        />
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:background="@color/fms_table_item_border_bg" />
+
+    <TextView
+        android:id="@+id/tv_feedback_type_table_row"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:padding="@dimen/small_margin"
+        android:singleLine="true"
+        android:text="Feedback Type"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/small_text_size" 
+          android:background="#f5f5f5"
+        />
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:background="@color/fms_table_item_border_bg" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:gravity="center" 
+        android:background="#f5f5f5"
+        >
+
+        <Button
+            android:id="@+id/bt_delete_table_row"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/cross_red" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

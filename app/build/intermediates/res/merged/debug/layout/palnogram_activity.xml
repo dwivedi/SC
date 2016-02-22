@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerblue" >
+
+        <Button
+            android:id="@+id/saveBtn"
+            style="@style/button_style"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttongreen"
+            android:onClick="onProceedButtonClick"
+            android:text="@string/submit" />
+
+        <TextView
+            android:id="@+id/headercentretext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_planogram"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/headersize"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            style="@style/button_style"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttongraylight"
+            android:text="@string/cancel"
+            android:textColor="#000000"
+            android:onClick="onCancelButtonClick"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDisplayUnit"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/palnogram_edittext">
+
+        <TextView
+            android:id="@+id/tvDisplayUnite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/display_units"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/palnogramCompitorListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlDisplayUnit"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/palnogramClassContainer"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/palnogramCompitorListContainer"
+        android:gravity="center_horizontal"
+        android:padding="2dp" >
+
+        <Button
+            android:id="@+id/btnPlanogramDisplayPlanogram"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:background="@drawable/buttonblue_rectangle"
+            android:onClick="onDisplayPlanogramButtonClick"
+            android:text="@string/display_planogram"
+            android:textColor="@drawable/button_text_color_selector" />
+
+        <TextView
+            android:id="@+id/tvPalnogramClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnPlanogramDisplayPlanogram"
+            android:gravity="center_vertical"
+            android:text="CLASS NAME"
+              android:textColor="@color/orange_dark"
+           />
+
+       
+    </RelativeLayout>
+
+
+
+    <RelativeLayout 
+        android:id="@+id/rlListHeader"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/light_blue"
+    android:layout_below="@+id/palnogramClassContainer"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/textViewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/model"
+        android:textColor="@color/text_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/available"
+        android:textColor="@color/text_color"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+    <ListView
+        android:id="@+id/listViewPalnogramProductList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/palnogramProductCompGroupListContainer"
+        android:layout_below="@+id/rlListHeader"
+        android:layout_centerHorizontal="true"
+        android:cacheColorHint="@color/transparent"
+         >
+    </ListView>
+
+        <LinearLayout
+        android:id="@+id/palnogramProductCompGroupListContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    
+</RelativeLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/palnogram_activity.xml -->

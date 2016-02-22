@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:gravity="center"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/paymentModes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <EditText
+                android:id="@+id/enterAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/amount"
+                android:inputType="number" android:singleLine="true" android:maxLength="10"/>
+
+            <EditText
+                android:id="@+id/transId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/transactionId"
+                android:singleLine="true"
+                android:visibility="gone" android:maxLength="16"/>
+
+            <EditText
+                android:id="@+id/transDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:cursorVisible="false"
+                android:clickable="true"
+                android:onClick="onTransactionDatePickerClick"
+                android:hint="@string/transactionDate"
+                />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/comments" />
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp" >
+
+                    <Button
+                        android:id="@+id/btnAddCollectionData"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="@string/ok" 
+                        android:onClick="onAddCollectionDataClick"/>
+
+                    <Button
+                        android:id="@+id/btnCancelCollectionData"
+                        style="@style/button_style"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:onClick="onCancelCollectionDataClick"
+                        android:text="@string/cancel" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

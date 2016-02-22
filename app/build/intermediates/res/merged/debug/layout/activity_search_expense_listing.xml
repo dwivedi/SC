@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ems_header_bg"
+        android:padding="@dimen/margin_10" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/new_back_icon"
+            android:onClick="onBackBtnClick"
+            />
+
+        <EditText
+            android:id="@+id/search_expense_editetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_toEndOf="@id/back_btn"
+            android:layout_toLeftOf="@+id/search_btn"
+            android:layout_toRightOf="@id/back_btn"
+            android:layout_toStartOf="@+id/search_btn"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/search_expense"
+            android:inputType="textNoSuggestions"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text_size" />
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:gravity="center_vertical"
+            android:onClick="onSearchExpenseClick"
+            android:src="@drawable/search_icon" />
+    </RelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ems_tab_bg"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/expense_type_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="33%"
+            android:text="@string/expense_type"
+            android:textColor="@color/ems_tab_textcolor"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/pending_with_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_toEndOf="@+id/expense_type_textview"
+            android:layout_toRightOf="@+id/expense_type_textview"
+            app:layout_widthPercent="33%"
+            android:text="@string/pending_with"
+            android:textColor="@color/ems_tab_textcolor"
+            android:textSize="@dimen/small_text_size" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/ems_divider_and_date_color" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/serach_expense_list_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scrollbars="vertical" />
+
+</LinearLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/activity_search_expense_listing.xml -->

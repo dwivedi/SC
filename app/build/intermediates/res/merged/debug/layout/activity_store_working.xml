@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+   <!-- <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/header_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        smartdost:actionTitle="Store Working" />
+-->
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar"
+        android:elevation="4dp">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/searchBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <com.samsung.ssc.CustomUI.SSCEditText
+            android:id="@+id/et_stroeName_otherStoreFragment"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="6.5"
+            android:background="@drawable/edit_text_background"
+            android:gravity="left|center_vertical"
+            android:hint="@string/search_store"
+            android:padding="@dimen/edit_text_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_smaller"
+            android:textColor="@color/text_color"
+            smartdost:edittextFontType="roboto_light" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_cityName_otherStoreFragment"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="3.5"
+            android:background="@drawable/edit_text_background"
+            android:completionThreshold="1"
+            android:gravity="left|center_vertical"
+            android:hint="@string/search_city"
+            android:padding="@dimen/edit_text_padding"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:edittextFontType="roboto_light" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewStoreList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBar"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/activity_store_working.xml -->

@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/activity_outlet_profile_button_mtd_records"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_green_color"
+            android:text="@string/mtd"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/activity_outlet_profile_button_lmtd_records"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_blue_color"
+            android:text="@string/lmtd"
+            android:textColor="@drawable/button_text_color_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/activity_outlet_profile_linearlayout_mtd_records"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/acmdtpurchase"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/acmdtpurchase"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/acmdtsalevalidated"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/acmdtSale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/avmdtpurchase"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/avmdtpurchase"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/avmdtsalevalidated"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/avmdtSale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hamdtpurchase"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/hamdtpurchase"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hamdtsalevalidated"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/hamdtSale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/activity_outlet_profile_linearlayout_lmtd_records"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/aclmdtpurchase"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/aclmdtpurchase"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/aclmdtsalevalidated"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/aclmdtSale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/avlmdtpurchase"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/avlmdtpurchase"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/avlmdtsalevalidated"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/avlmdtSale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/halmdtpurchase"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/halmdtpurchase"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:weightSum="2" >
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/halmdtsalevalidated"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+
+                        <com.samsung.ssc.CustomUI.SSCTextView
+                            android:id="@+id/halmdtSale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_smaller"
+                            smartdost:fontType="roboto_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:weightSum="2" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/outlettarget"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/outletTarget"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="5dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:weightSum="2" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_sale"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/totalSale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:weightSum="2" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_purchase"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/totalPurchase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:weightSum="2" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ach"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/ach"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:weightSum="2" >
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/lastVisitedDate"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+
+                    <com.samsung.ssc.CustomUI.SSCTextView
+                        android:id="@+id/lastVisitedDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_smaller"
+                        smartdost:fontType="roboto_medium" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.samsung.ssc.CustomUI.SSCButton
+        android:id="@+id/btnNext_outletProfileFragmentPerformance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonblue"
+        android:clickable="true"
+        android:text="@string/next"
+        android:padding="10dp"
+        android:layout_margin="2dp"
+        android:textColor="@drawable/button_text_color_selector"
+        android:textSize="@dimen/text_size_smaller"
+        smartdost:buttonFontType="roboto_medium" />
+
+</LinearLayout>

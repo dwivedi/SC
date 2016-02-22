@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#F4F5F9"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="3.5" >
+
+    <TextView
+        android:id="@+id/tv_model_eolOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="product"
+        android:textColor="@android:color/black" >
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/et_qty_eolOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:maxLength="5"
+        android:singleLine="true"
+         >
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_supportPerUnit_eolOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:maxLength="5"
+        android:singleLine="true"
+    
+        android:textColor="@android:color/black" >
+    </EditText>
+
+</LinearLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/eol_listview_item.xml -->

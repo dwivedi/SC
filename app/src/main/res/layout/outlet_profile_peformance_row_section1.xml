@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:id="@+id/activity_outlet_profile_linearlayout_mtd_records"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="6" >
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_productType_performanceRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AV"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:fontType="roboto_medium" />
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_transactionType_performanceRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SellIn/SellOut"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:fontType="roboto_medium" />
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_mtdunit_performanceRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="12345"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:fontType="roboto_medium" />
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_mtdvalue_performanceRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="12345"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:fontType="roboto_medium" />
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_lmtdunit_performanceRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="12345"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:fontType="roboto_medium" />
+
+        <com.samsung.ssc.CustomUI.SSCTextView
+            android:id="@+id/tv_lmtdvalue_performanceRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="12345"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:fontType="roboto_medium" />
+    </LinearLayout>
+
+</LinearLayout>

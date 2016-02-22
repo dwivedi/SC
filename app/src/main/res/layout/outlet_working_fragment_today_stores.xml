@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <com.samsung.ssc.CustomUI.SSCTextView
+        android:padding="10dp"
+        android:id="@+id/tv_store_not_available_todaystoreFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        smartdost:fontType="roboto_medium"
+        android:text="@string/today_store_not_available"
+        android:textSize="@dimen/text_size_smaller"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:visibility="gone"
+     
+         />
+    
+    
+    <ListView
+        android:id="@+id/lv_todaystoreFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

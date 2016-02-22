@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <ExpandableListView
+        android:id="@+id/activity_territorries_expandablelistview_disty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:animateLayoutChanges="true"
+        android:choiceMode="singleChoice"
+        android:divider="#00000000"
+        android:overScrollMode="always"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" >
+    </ExpandableListView>
+
+</LinearLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/activity_territorries.xml -->

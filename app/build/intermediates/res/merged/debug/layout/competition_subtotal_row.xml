@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center" android:layout_marginTop="1dp">
+
+        <TextView
+            
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight=".3"
+            android:text="Sub-total"
+            android:textColor="@color/button_notpressed" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/subtotal_brand1"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:textColor="@color/button_notpressed"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/subtotal_brand2"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:textColor="@color/button_notpressed"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/subtotal_brand3"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:textColor="@color/button_notpressed"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/subtotal_brand4"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:textColor="@color/button_notpressed"
+            android:textStyle="bold" >
+        </TextView>
+    </TableRow>
+
+</RelativeLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/competition_subtotal_row.xml -->

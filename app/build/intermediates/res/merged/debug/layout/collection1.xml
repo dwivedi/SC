@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/sDActionBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        smartdost:actionTitle="@string/collection" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_below="@id/sDActionBar1"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent" />
+
+    <TableRow
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="visible" >
+
+        <com.samsung.ssc.CustomUI.SSCButton
+            android:id="@+id/approveBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:background="@drawable/buttonblue"
+            android:onClick="onProceedButtonClick"
+            android:padding="10dp"
+            android:text="@string/submit"
+            android:textColor="@drawable/button_text_color_selector"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:buttonFontType="roboto_medium"
+            android:layout_marginRight="2dp"
+             />
+
+        <com.samsung.ssc.CustomUI.SSCButton
+             android:layout_marginLeft="2dp"
+            android:id="@+id/rejectBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/buttonblue"
+            android:onClick="onCanceButtonlClick1"
+            android:text="@string/cancel"
+            android:textColor="@drawable/button_text_color_selector"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:buttonFontType="roboto_medium" />
+    </TableRow>
+
+</RelativeLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/collection1.xml -->

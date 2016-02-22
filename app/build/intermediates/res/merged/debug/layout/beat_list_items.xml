@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/storeName"
+        style="@style/user_profile_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/button_notpressed"
+        android:textStyle="normal" android:text="dfslkdfjs">
+    </TextView>
+   <!--  <TextView
+        android:id="@+id/beatSummary"
+        style="@style/user_profile_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:textSize="10sp"
+        android:layout_below="@+id/storeName"
+        android:textStyle="normal" visiblity>
+    </TextView> -->
+
+    <EditText
+        android:id="@+id/beatDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/selectBeat"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/storeName"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/selectBeat"
+        android:focusableInTouchMode="false"
+        style="@style/edittext_style"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/selectBeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/storeName"
+        android:layout_marginRight="5dp" />
+
+</RelativeLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/beat_list_items.xml -->

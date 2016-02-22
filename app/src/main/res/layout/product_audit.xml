@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity" >
+
+    <com.samsung.ssc.CustomUI.SSCActionBar
+        android:id="@+id/sDActionBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        smartdost:actionTitle="@string/product_audit" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/new_blue"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:onClick="onFixtureSelectionClick"
+            android:orientation="horizontal" 
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:id="@+id/iv_race_product_audit_fixture_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fixture_selection"
+                
+                 />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="Fixture Selection"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="onCartClick" >
+        
+        <ImageView
+            android:id="@+id/iv_race_product_audit_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/cart1"
+            android:background="@drawable/cart"
+             />
+
+        <TextView
+            android:id="@+id/cart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="cart"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvProductAuditCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cart1"
+            android:layout_toRightOf="@id/iv_race_product_audit_cart"
+              android:textColor="@android:color/white"/>
+        
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+        <Spinner
+            android:id="@+id/spinnerProductGroupProductAudit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:prompt="@string/product_group" />
+
+        <Spinner
+            android:id="@+id/spinnerProductCategoryProductAudit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_weight="1"
+            android:prompt="@string/product_category" />
+    </LinearLayout>
+
+    <com.samsung.ssc.CustomUI.SSCEditText
+        android:id="@+id/et_product_audit_search"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text_background"
+        android:gravity="left|center_vertical"
+        android:hint="@string/search"
+        android:padding="@dimen/edit_text_padding"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_smaller"
+        android:focusable="false"
+        smartdost:edittextFontType="roboto_light" />
+
+    <ListView
+        android:id="@+id/lv_race_productaudit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

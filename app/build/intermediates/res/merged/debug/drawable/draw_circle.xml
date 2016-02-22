@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+            <gradient android:angle="270" android:endColor="#ff3e7e" android:startColor="#ff3e7e" />
+        </shape><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/drawable/draw_circle.xml -->

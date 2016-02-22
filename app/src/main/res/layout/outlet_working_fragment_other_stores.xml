@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+ <com.samsung.ssc.CustomUI.SSCEditText
+            android:id="@+id/et_stroeName_otherStoreFragment"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="6.5"
+            android:background="@drawable/edit_text_background"
+            android:gravity="left|center_vertical"
+            android:hint="@string/search_store"
+            android:padding="@dimen/edit_text_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:edittextFontType="roboto_light" />
+        <AutoCompleteTextView
+            android:id="@+id/actv_cityName_otherStoreFragment"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="3.5"
+            android:background="@drawable/edit_text_background"
+            android:completionThreshold="1"
+            android:gravity="left|center_vertical"
+            android:hint="@string/search_city"
+            android:padding="@dimen/edit_text_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_smaller"
+            smartdost:edittextFontType="roboto_light" />
+
+       
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_otherStoreFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

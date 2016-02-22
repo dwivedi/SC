@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartdost="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:id="@+id/page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_page_bg_color" >
+
+    <RelativeLayout
+        android:id="@+id/header_alert"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/new_blue"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/textview_about_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/announcement"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/okBtn"
+        android:layout_below="@+id/header_alert"
+        android:layout_margin="5dp" >
+
+            <WebView
+                android:id="@+id/announcementWV"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonblue"
+        android:text="@string/ok"
+        android:textColor="@drawable/button_text_color_selector" />
+
+</RelativeLayout>

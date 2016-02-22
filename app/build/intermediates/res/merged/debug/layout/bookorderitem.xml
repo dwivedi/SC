@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:stretchColumns="0,1" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="70dp" >
+
+            <TextView
+                android:id="@+id/tvproduct"
+                style="@style/user_profile_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_weight=".5"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/etqty"
+                style="@style/edit_field_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <TextView
+                android:id="@+id/tvdpvalue"
+                style="@style/user_profile_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:textStyle="normal" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/white">
+    <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:stretchColumns="0,1" >
+    <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="70dp" >
+             
+
+                <TextView
+                    style="@style/user_profile_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight=".5"
+                    android:id="@+id/tvproduct"
+                     android:layout_marginTop="10dp"/>
+                    
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:gravity="right" >
+                    <EditText
+                        android:id="@+id/etqty"
+                        style="@style/edit_field_style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight=".5" />
+                    <TextView
+                    style="@style/user_profile_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight=".5"
+                    android:id="@+id/tvdpvalue"/>
+                </LinearLayout>
+            </TableRow>
+            </TableLayout>
+    
+
+</LinearLayout>
+-->
+<!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/bookorderitem.xml -->

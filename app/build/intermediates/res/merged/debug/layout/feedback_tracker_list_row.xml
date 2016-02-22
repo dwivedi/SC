@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fms_tracker_row_bg"
+        android:weightSum="5" 
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/textViewFMSTrackerFeedbackRowTeam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="Team"
+            android:textColor="#8F8F8F" />
+
+        <TextView
+            android:id="@+id/textViewFMSTrackerFeedbackRowCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Category"
+            android:gravity="center"
+            android:textColor="#8F8F8F" />
+
+        <TextView
+            android:id="@+id/textViewFMSTrackerFeedbackRowStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:text="Status"
+            android:gravity="center"
+            android:textColor="#8F8F8F" />
+
+        <TextView
+            android:id="@+id/textViewFMSTrackerFeedbackRowUpdateOn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:text="Updated On"
+            android:gravity="center"
+            android:textColor="#8F8F8F" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFMSTrackerFeedbackRowAction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6" 
+            android:focusableInTouchMode="false"
+            android:focusable="false"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linerlayoutFMSTrackerFeedbackRowDetailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#F7F7F8"
+        android:orientation="vertical"
+        
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Created By"
+            android:textColor="#8F8F8F" />
+
+        <TextView
+            android:id="@+id/textViewFMSTrackerFeedbackRowDetailCreatedBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="Created By"
+            android:paddingLeft="3dp"
+            android:gravity="right"
+            android:textColor="#8F8F8F" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="Created On"
+            android:textColor="#8F8F8F" />
+
+        <TextView
+            android:id="@+id/textViewFMSTrackerFeedbackRowDetailCreatedOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignRight="@+id/textViewFMSTrackerFeedbackRowDetailCreatedBy"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="Created On"
+            android:paddingLeft="3dp"
+            android:gravity="right"
+            android:textColor="#8F8F8F" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:text="Feedback Since"
+            android:textColor="#8F8F8F" />
+
+        <TextView
+            android:id="@+id/textViewFMSTrackerFeedbackRowDetailFeedbackScince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignRight="@+id/textViewFMSTrackerFeedbackRowDetailCreatedOn"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="Feedback Since"
+            android:paddingLeft="3dp"
+            android:gravity="right"
+            android:textColor="#8F8F8F" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView5"
+            android:text="Remark"
+            android:textColor="#8F8F8F" />
+
+        <TextView
+            android:id="@+id/textViewFMSTrackerFeedbackRowDetailFeedbackRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_alignRight="@+id/textViewFMSTrackerFeedbackRowDetailFeedbackScince"
+            android:layout_toRightOf="@+id/textView7"
+            android:text="Remark"
+            android:paddingLeft="3dp"
+            android:gravity="right"
+            android:textColor="#8F8F8F" 
+           
+            android:singleLine="true"
+             android:ellipsize="end"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/F:/SC_TFS/SalesCatalyst%20Android/Dev/SC_STUDIO/app/src/main/res/layout/feedback_tracker_list_row.xml -->

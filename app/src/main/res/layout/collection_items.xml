@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/srNo"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight=".05"
+            android:text="1"
+            android:textColor="@color/text_color"
+            android:textStyle="bold" >
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight=".3"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/collectionAmount"
+                style="@style/user_profile_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2500000000"
+                android:textColor="@color/holo_green_dark"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/collectionMode"
+                style="@style/user_profile_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/collectionAmount"
+                android:text="Online Banking"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight=".5"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/transId"
+                style="@style/user_profile_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DDWWWWWIIUUXSSSSS"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/transDate"
+                style="@style/user_profile_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transId"
+                android:text="Transaction Date"
+                android:textStyle="normal" android:textColor="@color/button_notpressed"/>
+        </RelativeLayout>
+
+        <!--
+             <TextView
+            android:id="@+id/collectionDesc"
+            style="@style/user_profile_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight=".3"
+            android:text="Cheqe will be expired in two days"
+            android:textColor="@color/button_notpressed"
+            android:textStyle="normal" />
+        -->
+
+		<Button
+            android:id="@+id/collectionEdit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_column="3"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit" android:visibility="visible"/>
+        <Button
+            android:id="@+id/collectionDelete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_column="4"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/close_icon" />
+    </TableRow>
+
+</RelativeLayout>

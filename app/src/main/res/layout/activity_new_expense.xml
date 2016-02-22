@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res/com.samsung.ssc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/expense_user_action_layout"
+        android:layout_below="@id/toolbar"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/expense_type_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/expense_type"
+                    android:textColor="@color/expense_type_color"
+                    android:textSize="@dimen/small_text_size" />
+
+
+                <TextView
+                    android:id="@+id/expense_value_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@+id/expense_type_textview"
+                    android:layout_toLeftOf="@+id/select_expense_type_imageview"
+                    android:layout_toRightOf="@+id/expense_type_textview"
+                    android:layout_toStartOf="@+id/select_expense_type_imageview"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <ImageView
+                    android:id="@+id/select_expense_type_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:padding="@dimen/margin_10"
+                    android:src="@drawable/drop_down_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/add_bill_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/margin_10"
+                android:background="@color/add_bill_color"
+                android:clickable="true"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_5"
+                android:text="@string/add_bill"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ems_tab_bg"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/bill_no_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/bill_no"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="20%" />
+
+                <TextView
+                    android:id="@+id/description_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@+id/bill_no_textview"
+                    android:layout_toRightOf="@+id/bill_no_textview"
+                    android:singleLine="true"
+                    android:text="@string/description"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="20%" />
+
+                <TextView
+                    android:id="@+id/amount_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@+id/description_textview"
+                    android:layout_toRightOf="@+id/description_textview"
+                    android:singleLine="true"
+                    android:text="@string/amount"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="20%" />
+
+                <TextView
+                    android:id="@+id/documents_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_toEndOf="@+id/amount_textview"
+                    android:layout_toRightOf="@+id/amount_textview"
+                    android:singleLine="true"
+                    android:text="@string/documents"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/small_text_size"
+                    app:layout_widthPercent="20%" />
+            </android.support.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <LinearLayout
+                android:id="@+id/expense_item_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/expense_type_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/billable"
+                    android:textColor="@color/expense_type_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <RadioGroup
+                    android:id="@+id/billable_radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/billable_yes_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:button="@drawable/selector_billable_radio_buttons"
+                        android:checked="false"
+                        android:paddingLeft="@dimen/margin_15"
+                        android:paddingRight="@dimen/margin_15"
+                        android:paddingStart="@dimen/margin_15"
+                        android:text="@string/yes"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/billable_no_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_billable_radio_buttons"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/margin_15"
+                        android:paddingRight="@dimen/margin_15"
+                        android:paddingStart="@dimen/margin_15"
+                        android:text="@string/no"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/small_text_size" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/billable_to_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/billable_to_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:padding="@dimen/margin_10"
+                    android:singleLine="true"
+                    android:text="@string/billable_to"
+                    android:textColor="@color/expense_type_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/ems_divider_and_date_color" />
+
+                <EditText
+                    android:id="@+id/billable_to_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/enter_billable_to"
+                    android:inputType="textNoSuggestions"
+                    android:padding="@dimen/margin_10"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/expense_type_color"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:text="@string/ems_comments"
+                android:textColor="@color/expense_type_color"
+                android:textSize="@dimen/small_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/ems_divider_and_date_color" />
+
+            <EditText
+                android:id="@+id/comments_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/enter_comments"
+                android:padding="@dimen/margin_10"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/expense_type_color"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/expense_user_action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <ImageView
+            android:id="@+id/submit_expense_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/new_expense_submit_bg_color"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/submit_icon"
+            android:visibility="visible" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/update_expense_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/update_expense_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_2"
+                android:layout_marginRight="@dimen/margin_2"
+                android:background="@color/new_expense_submit_bg_color"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/update"
+                app:layout_widthPercent="50%" />
+
+            <ImageView
+                android:id="@+id/cancel_expense_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/update_expense_btn"
+                android:layout_toRightOf="@+id/update_expense_btn"
+                android:background="@color/new_expense_submit_bg_color"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/cancel"
+                app:layout_widthPercent="50%" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/approval_expense_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/approve_expense_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_2"
+                android:layout_marginRight="@dimen/margin_2"
+                android:background="@color/new_expense_submit_bg_color"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/submit_icon"
+                app:layout_widthPercent="50%" />
+
+            <ImageView
+                android:id="@+id/reject_expense_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/approve_expense_btn"
+                android:layout_toRightOf="@+id/approve_expense_btn"
+                android:background="@color/new_expense_submit_bg_color"
+                android:padding="@dimen/margin_10"
+                android:src="@drawable/reject"
+                app:layout_widthPercent="50%" />
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
